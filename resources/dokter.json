@@ -1,0 +1,172 @@
+{
+    "dokter": [
+        {
+            "nama": "drg. Ali Taqwim Sp.KGA",
+            "title": "Spesialis Kedokteran Gigi Anak",
+            "foto":"resources/imgs/photos/1.jpg",
+            "jadwal": {
+                "Senin": "",
+                "Selasa": "",
+                "Rabu": "",
+                "Kamis": "",
+                "Jumat": "",
+                "Sabtu": "09.30-13.30",
+                "Minggu": ""
+            }
+        },
+        {
+            "nama": "drg. Agus Surachman Sp.BM",
+            "title": "Spesialis Bedah Mulut",
+            "foto":"resources/imgs/photos/2.jpg",
+            "jadwal": {
+                "Senin": "",
+                "Selasa": "09.30-13.30",
+                "Rabu": "",
+                "Kamis": "",
+                "Jumat": "",
+                "Sabtu": "",
+                "Minggu": ""
+            }
+        },
+        {
+            "nama": "drg. Haikal Mahardika Sp.Ort",
+            "title": "Spesialis Orthodonsi",
+            "foto":"resources/imgs/photos/3.jpg",
+            "jadwal": {
+                "Senin": "",
+                "Selasa": "",
+                "Rabu": "",
+                "Kamis": "",
+                "Jumat": "",
+                "Sabtu": "",
+                "Minggu": "10.00-selesai"
+            }
+        },
+        {
+            "nama": "drg. Inneke Cahyani, MDSc., Sp.Perio",
+            "title": "Spesialis Periodonsia",
+            "foto":"resources/imgs/photos/4.jpg",
+            "jadwal": {
+                "Senin": "",
+                "Selasa": "",
+                "Rabu": "13.30-17.30",
+                "Kamis": "",
+                "Jumat": "",
+                "Sabtu": "",
+                "Minggu": ""
+            }
+        },
+        {
+            "nama": "drg. Leedwin Kalyana ALison, Sp. KG",
+            "title": "Spesialis Konsersvasi Gigi",
+            "foto":"resources/imgs/photos/5.jpg",
+            "jadwal": {
+                "Senin": "",
+                "Selasa": "",
+                "Rabu": "13.30-17.30",
+                "Kamis": "",
+                "Jumat": "",
+                "Sabtu": "",
+                "Minggu": ""
+            }
+        },
+        {
+            "nama": "drg. Brian Wiro",
+            "title": "Dokter Gigi Umum",
+            "foto":"resources/imgs/photos/6.jpg",
+            "jadwal": {
+                "Senin": "",
+                "Selasa": "",
+                "Rabu": "17.30-20.30",
+                "Kamis": "17.30-20.30",
+                "Jumat": "17.30-20.30",
+                "Sabtu": "",
+                "Minggu": ""
+            }
+        },
+        {
+            "nama": "drg. Aulia Laras",
+            "title": "Dokter Gigi Umum",
+            "foto":"resources/imgs/photos/7.jpg",
+            "jadwal": {
+                "Senin": "",
+                "Selasa": "09.30-13.30",
+                "Rabu": "09.30-13.30",
+                "Kamis": "",
+                "Jumat": "",
+                "Sabtu": "",
+                "Minggu": ""
+            }
+        },
+        {
+            "nama": "drg. Denik Mutaqin",
+            "title": "Dokter Gigi Umum",
+            "foto":"resources/imgs/photos/8.jpg",
+            "jadwal": {
+                "Senin": "17.30-20.30",
+                "Selasa": "17.30-20.30",
+                "Rabu": "",
+                "Kamis": "",
+                "Jumat": "15.00-17.30",
+                "Sabtu": "16.00-20.30",
+                "Minggu": ""
+            }
+        },
+        {
+            "nama": "drg. Ifan Arief",
+            "title": "Dokter Gigi Umum",
+            "foto":"resources/imgs/photos/9.jpg",
+            "jadwal": {
+                "Senin": "09.30-13.30",
+                "Selasa": "",
+                "Rabu": "",
+                "Kamis": "",
+                "Jumat": "",
+                "Sabtu": "09.30-13.30",
+                "Minggu": "13.30-17.30"
+            }
+        },
+        {
+            "nama": "drg. Linna Armiyati S",
+            "title": "Dokter Gigi Umum",
+            "foto":"resources/imgs/photos/10.jpg",
+            "jadwal": {
+                "Senin": "",
+                "Selasa": "13.30-17.30",
+                "Rabu": "",
+                "Kamis": "09.30-13.30",
+                "Jumat": "",
+                "Sabtu": "",
+                "Minggu": ""
+            }
+        },
+        {
+            "nama": "drg. Maria Yuliani",
+            "title": "Dokter Gigi Umum",
+            "foto":"resources/imgs/photos/11.jpg",
+            "jadwal": {
+                "Senin": "13.30-17.00",
+                "Selasa": "",
+                "Rabu": "",
+                "Kamis": "13.30-16.00",
+                "Jumat": "11.00-15.00",
+                "Sabtu": "13.30-16.00",
+                "Minggu": "10.00-15.00"
+            }
+        },
+        {
+            "nama": "drg. Adellia Pramaissela",
+            "title": "Dokter Gigi Umum",
+            "foto":"resources/imgs/photos/12.jpg",
+            "jadwal": {
+                "Senin": "09.30-13.30",
+                "Selasa": "",
+                "Rabu": "",
+                "Kamis": "09.30-13.30",
+                "Jumat": "09.30-13.30",
+                "Sabtu": "",
+                "Minggu": "15.00-20.30"
+            }
+        }
+    ]
+}

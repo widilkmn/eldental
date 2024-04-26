@@ -1,0 +1,163 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION & SIDENAV */
+.hamburger-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* LANDING SECTION */
+.landing {
+    background-color: whitesmoke;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT SECTION */
+.about {
+    background-color: gainsboro;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SCHEDULE SCHEDULE */
+.schedule {
+    background-color: whitesmoke;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule .schedule-title {
+    position:absolute;
+    top: 10dvh;
+    justify-content: end;
+    vertical-align: top;
+}
+
+#schedule {
+    height: 100dvh;
+    width: 100%;
+}
+
+#schedule .carousel-item {
+    /* background-color: white; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40dvw;
+}
+
+.card {
+    /* width: 500px; */
+    
+}
+
+.card-image img {
+    background-color: antiquewhite;
+    width: 50dvh;
+    height: 30dvh;
+    object-fit: contain;
+}
+
+/* RESULT RESULT */
+.result {
+    background-color: gainsboro;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.result .result-title {
+    position:absolute;
+    top: 5dvh;
+    justify-content: end;
+    vertical-align: top;
+}
+
+.carousel-slider {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 50dvw;
+    height: 50dvh;
+}
+
+.carousel-slider .carousel-item {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.carousel-slider .carousel-item img {
+    height: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+/* LOCATION SECTION */
+.location {
+    background-color: whitesmoke;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.location-elements .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.map-images .image img{
+    height: 10dvh;
+    width: 100%;
+}
+
+.map-images .map-location iframe{
+    height: 30dvh;
+    width: 100%;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 10vw;
+}

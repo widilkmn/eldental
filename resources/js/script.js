@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var options = { 
                 dist: -200,
                 duration: 50, // Adjust transition duration
-                indicators: true // Show indicators
+                // indicators: true // Show indicators
             };
             var instances = M.Carousel.init(elems, options);
         })

@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.schedule');
             var options = { 
                 dist: -200,
-                duration: 50 // Adjust transition duration
-                // indicators: true // Show indicators
+                duration: 50, // Adjust transition duration
+                indicators: true // Show indicators
             };
             var instances = M.Carousel.init(elems, options);
         })
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Carousel Result Image Function
     var elems = document.querySelectorAll('#carousel-result');
     var options = {
-        duration: 200,
+        duration: 50,
         dist: -150,
         fullWidth: true,
         indicators: true

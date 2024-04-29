@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.schedule');
             var options = { 
                 dist: -200,
-                duration: 200 // Adjust transition duration
+                duration: 50 // Adjust transition duration
                 // indicators: true // Show indicators
             };
             var instances = M.Carousel.init(elems, options);

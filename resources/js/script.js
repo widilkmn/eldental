@@ -99,13 +99,18 @@ let lastScrollTop = 0;
 
 // Function to handle scroll event
 window.addEventListener('scroll', function() {
+    
     // Change the Contact Us Button
-    if (window.scrollY > 0) {
+
+    // Check if the window width is greater than 992px
+    if (window.innerWidth > 992) {
         // Add class to position "Contact Us" image at bottom right
-        contactUs.classList.add('bottom-right');
-    } else {
-        // Remove class if scroll position is at top
-        contactUs.classList.remove('bottom-right');
+        if (window.scrollY > 0) {
+            contactUs.classList.add('bottom-right');
+        } else {
+            // Remove class if scroll position is at top
+            contactUs.classList.remove('bottom-right');
+        }
     }
 
 

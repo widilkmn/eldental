@@ -9,6 +9,8 @@ body {
 
 .banner {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 /* NAVIGATION & SIDENAV */
@@ -24,14 +26,8 @@ body {
 
 /* Change position for Contact-us Button */
 .bottom-right {
-    position: fixed;
-    z-index: 1000;
-    width: 250px; /* Adjust the width as needed */
-    right: 20px;
-    bottom: 20px;
-    height: auto;
-    cursor: pointer; /* Change cursor to indicate it's clickable */
-    transition: transform 0.9s ease; /* Add smooth transition effect */
+    transform: translateY(82dvh);
+    transition: transform 0.7s ease; /* Add smooth transition effect */
 }
 
 nav ul li a:hover {
@@ -72,9 +68,10 @@ nav ul li a:hover {
 
 .contact-us {
     position: fixed;
+    margin-top: 7dvh;
     z-index: 1000;
-    width: 250px; /* Adjust the width as needed */
-    right: 20px;
+    width: 20dvw; /* Adjust the width as needed */
+    right: 3dvw;
     height: auto;
     cursor: pointer; /* Change cursor to indicate it's clickable */
     transition: transform 0.3s ease; /* Add smooth transition effect */
@@ -310,7 +307,8 @@ nav ul li a:hover {
     }
 
     .contact-us {
-        top: auto;
-        bottom: 20px;
+        width: 35dvw;
+        bottom: 2dvh;
+        right: 5dvw;
     }
 }

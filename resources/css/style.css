@@ -5,26 +5,117 @@ body {
     scroll-behavior: smooth;
 }
 
+/* BANNER SECTION */
+
+.banner {
+    position: relative;
+}
+
 /* NAVIGATION & SIDENAV */
+.show-nav {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.hidden-nav {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+/* Change position for Contact-us Button */
+.bottom-right {
+    position: fixed;
+    z-index: 1000;
+    width: 250px; /* Adjust the width as needed */
+    right: 20px;
+    bottom: 20px;
+    height: auto;
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    transition: transform 0.9s ease; /* Add smooth transition effect */
+}
+
+nav ul li a:hover {
+    background-color: white !important;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.nav-wrapper img {
+    max-width: 15dvw;
+    max-height: 100%;
+    object-fit: cover;
+    margin-top: 3dvh;
+    margin-bottom: 3dvh;
+}
+
+.nav-wrapper.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-wrapper.content a {
+    padding-left: 5dvw;
+    padding-right: 5dvw;
+}
+
 .hamburger-icon {
     display: flex;
     justify-content: flex-end;
 }
 
+.contact-us {
+    position: fixed;
+    z-index: 1000;
+    width: 250px; /* Adjust the width as needed */
+    right: 20px;
+    height: auto;
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.contact-us img {
+    width: 100%; /* Set width to 100% to fill the parent div */
+    height: 100%; /* Set height to 100% to fill the parent div */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+.contact-us img:hover {
+    /* Define styles for the image when hovered */
+    filter: brightness(1.2); /* Optional: add a slight brightness effect */
+}
+
 /* LANDING SECTION */
 .landing {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-image: url(/resources/imgs/bg/bg.jpg);
+    background-size: cover;
+    background-position: center;
     height: 100dvh;
     width: 100%;
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
+}
+
+.landing-overlay {
+    background: linear-gradient(to top, rgb(7, 194, 135), rgb(255, 0, 0, 0));
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
 }
 
 /* ABOUT SECTION */
 .about {
     background-color: gainsboro;
+    background-position: center;
     height: 100dvh;
     width: 100%;
     display: flex;
@@ -33,9 +124,20 @@ body {
     align-items: center;
 }
 
+.about-overlay {
+    background: linear-gradient(to right, rgb(95, 254, 183), rgb(255, 0, 0, 0));
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+}
+
 /* SCHEDULE SCHEDULE */
 .schedule {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-image: url(/resources/imgs/bg/klinik2.jpg);
+    background-size: cover;
+    background-position: center;
     height: 100dvh;
     width: 100%;
     display: flex;
@@ -45,16 +147,26 @@ body {
     align-items: center;
 }
 
+.schedule-overlay {
+    background: linear-gradient(to top, rgb(7, 194, 135), rgb(255, 0, 0, 0));
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+}
+
 .schedule .schedule-title {
     position:absolute;
     top: 10dvh;
     justify-content: end;
     vertical-align: top;
+    z-index: 1;
 }
 
 #schedule {
     height: 100dvh;
     width: 100%;
+    z-index: 1;
 }
 
 #schedule .carousel-item {
@@ -63,19 +175,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40dvw;
+    min-width: 50dvw;
+    max-width: 80dvw;
 }
 
 .card {
-    /* width: 500px; */
-    
+    min-width: 10dvw;
 }
 
 .card-image img {
-    background-color: antiquewhite;
-    width: 50dvh;
-    height: 30dvh;
+    background-color: white;
+    /* width: 50dvh; */
+    width: 100%;
+    height: 100%;
+    max-height: 45dvh;
     object-fit: contain;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content .card-title {
+    font-size: small;
+}
+
+.card-content p{
+    font-size: small;
 }
 
 /* RESULT RESULT */
@@ -125,6 +253,18 @@ body {
     align-items: center;
 }
 
+.location-overlay {
+    background: linear-gradient(to right, rgb(95, 254, 183), rgb(255, 0, 0, 0));
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.location-elements {
+    z-index: 1;
+}
+
 .map-images {
     display: flex;
     flex-wrap: wrap;
@@ -143,7 +283,8 @@ body {
 }
 
 .map-images .map-location iframe{
-    height: 30dvh;
+    min-height: 30dvh;
+    max-height: 50dvh;
     width: 100%;
 }
 
@@ -160,4 +301,16 @@ body {
     justify-content: center;
     text-align: center;
     gap: 10vw;
+}
+
+/* Smaller Screen */
+@media only screen and (max-width: 992px) {
+    .nav-wrapper.content {
+        display: none;
+    }
+
+    .contact-us {
+        top: auto;
+        bottom: 20px;
+    }
 }

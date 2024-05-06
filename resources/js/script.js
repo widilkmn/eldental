@@ -10,7 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var menuItems = document.querySelectorAll('.sidenav .menu-item');
     menuItems.forEach(function(item) {
         item.addEventListener('click', function() {
-            M.Sidenav.getInstance(elems[0]).close();
+            var instance = M.Sidenav.getInstance(elems[0]);
+            console.log('Sidenav Instance:', instance);
+            if (instance) {
+                instance.close();
+            }
         });
     });
 
@@ -26,11 +30,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a class="carousel-item" href="#${index + 1}!">
                         <div class="card">
                             <div class="card-image">
-                                <img src="${dokter.foto}" class="responsive-img"> <!-- Added responsive-img class -->
+                                <img src="${dokter.foto}" class="responsive-img">
+                                <div class="activator waves-effect waves-light" style="position:absolute;top:0;bottom:0;right:0;left:0;"></div>
                             </div>
                             <div class="card-content">
-                                <span class="card-title">${dokter.nama}</span>
-                                <p>${dokter.title}</p>
+                                <button class="card-title activator btn waves-effect waves-light teal accent-4"><strong>Info Jadwal</strong></button>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title"><i class="material-icons right">close</i>Jadwal</span>
+                                <br>
+                                <div class="divider"></div>
+                                ${generateScheduleTable(dokter.jadwal)}
                             </div>
                         </div>
                     </a>
@@ -43,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.schedule');
             var options = { 
                 dist: -200,
-                duration: 50, // Adjust transition duration
+                duration: 200, // Adjust transition duration
                 // indicators: true // Show indicators
             };
             var instances = M.Carousel.init(elems, options);
@@ -55,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Carousel Result Image Function
     var elems = document.querySelectorAll('#carousel-result');
     var options = {
-        duration: 50,
+        duration: 200,
         dist: -150,
         fullWidth: true,
         indicators: true
@@ -65,3 +75,76 @@ document.addEventListener('DOMContentLoaded', function() {
         M.Carousel.getInstance(elems[0]).next();
     }, 7000);
 });
+
+// Function to generate schedule table HTML
+function generateScheduleTable(jadwal) {
+    let tableHTML = '<table class="centered"><thead><tr><th>Hari</th><th>Jam</th></tr></thead><tbody>';
+
+    for (const [hari, jam] of Object.entries(jadwal)) {
+        if (jam !== "") {
+            tableHTML += `<tr><td>${hari}</td><td>${jam}</td></tr>`;
+        }
+    }
+
+    tableHTML += '</tbody></table>';
+    return tableHTML;
+}
+
+// Get the navigation bar element
+const navbar = document.getElementById('main-navbar');
+const contactUs = document.getElementById('contact-us');
+
+// Get the initial scroll position
+let lastScrollTop = 0;
+
+// Function to handle scroll event
+window.addEventListener('scroll', function() {
+    // Change the Contact Us Button
+    if (window.scrollY > 0) {
+        // Add class to position "Contact Us" image at bottom right
+        contactUs.classList.add('bottom-right');
+    } else {
+        // Remove class if scroll position is at top
+        contactUs.classList.remove('bottom-right');
+    }
+
+
+    // Get the current scroll position
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Determine the scroll direction
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        navbar.classList.add('hidden-nav');
+    } else {
+        // Scrolling up
+        navbar.classList.remove('hidden-nav');
+        navbar.classList.add('show-nav'); // Add class to show the navigation bar
+    }
+
+    // Update the last scroll position
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
+// Function to handle NAVBAR in small screen
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const navWrapperContent = document.querySelector('.nav-wrapper-content');
+
+// Function to handle the visibility of nav-wrapper-content
+function toggleNavContentVisibility() {
+    if (window.getComputedStyle(hamburgerIcon).display === 'none') {
+        // Hamburger icon is hidden, show nav-wrapper-content
+        navWrapperContent.style.display = 'block';
+    } else {
+        // Hamburger icon is shown, hide nav-wrapper-content
+        navWrapperContent.style.display = 'none';
+    }
+}
+
+// Initial call to set initial visibility
+toggleNavContentVisibility();
+
+// Listen for window resize event to update visibility
+window.addEventListener('resize', toggleNavContentVisibility);
+
+

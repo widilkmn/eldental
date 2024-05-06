@@ -3,7 +3,7 @@
         {
             "nama": "drg. Ali Taqwim Sp.KGA",
             "title": "Spesialis Kedokteran Gigi Anak",
-            "foto":"resources/imgs/photos/1.jpg",
+            "foto":"resources/imgs/photos/ali-taqwim.png",
             "jadwal": {
                 "Senin": "",
                 "Selasa": "",
@@ -31,7 +31,7 @@
         {
             "nama": "drg. Haikal Mahardika Sp.Ort",
             "title": "Spesialis Orthodonsi",
-            "foto":"resources/imgs/photos/3.jpg",
+            "foto":"resources/imgs/photos/haikal-mahardhika.png",
             "jadwal": {
                 "Senin": "",
                 "Selasa": "",
@@ -73,7 +73,7 @@
         {
             "nama": "drg. Brian Wiro",
             "title": "Dokter Gigi Umum",
-            "foto":"resources/imgs/photos/6.jpg",
+            "foto":"resources/imgs/photos/brian-wiro.png",
             "jadwal": {
                 "Senin": "",
                 "Selasa": "",
@@ -101,7 +101,7 @@
         {
             "nama": "drg. Denik Mutaqin",
             "title": "Dokter Gigi Umum",
-            "foto":"resources/imgs/photos/8.jpg",
+            "foto":"resources/imgs/photos/denik-mutaqin.png",
             "jadwal": {
                 "Senin": "17.30-20.30",
                 "Selasa": "17.30-20.30",
@@ -129,7 +129,7 @@
         {
             "nama": "drg. Linna Armiyati S",
             "title": "Dokter Gigi Umum",
-            "foto":"resources/imgs/photos/10.jpg",
+            "foto":"resources/imgs/photos/linna-armiyati.png",
             "jadwal": {
                 "Senin": "",
                 "Selasa": "13.30-17.30",
@@ -157,7 +157,7 @@
         {
             "nama": "drg. Adellia Pramaissela",
             "title": "Dokter Gigi Umum",
-            "foto":"resources/imgs/photos/12.jpg",
+            "foto":"resources/imgs/photos/adellia-pramaisella.png",
             "jadwal": {
                 "Senin": "09.30-13.30",
                 "Selasa": "",

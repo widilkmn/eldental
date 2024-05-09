@@ -137,7 +137,7 @@ nav ul li a:hover {
 /* LANDING SECTION */
 .landing {
     /* background-color: whitesmoke; */
-    background-image: url(/resources/imgs/bg/bg.jpg);
+    background-image: url(./resources/imgs/bg/bg.jpg);
     background-size: cover;
     background-position: center;
     height: 100dvh;

@@ -24,18 +24,18 @@ button, input, optgroup, select, textarea {
 }
 
 .show-nav {
-    transform: translateY(0);
+    transform: translateY(-9%);
     transition: transform 0.3s ease;
 }
 
 .hidden-nav {
-    transform: translateY(-100%);
+    transform: translateY(-110%);
     transition: transform 0.3s ease;
 }
 
 /* Change position for Contact-us Button */
 .bottom-right {
-    transform: translateY(82dvh);
+    transform: translateY(80dvh);
     transition: transform 0.3s ease; /* Add smooth transition effect */
 }
 
@@ -113,7 +113,7 @@ nav ul li a:hover {
 
 .contact-us {
     position: fixed;
-    padding-top: 7dvh;
+    padding-top: 3dvh;
     z-index: 1000;
     width: 20dvw;
     right: 5dvw;
@@ -137,7 +137,7 @@ nav ul li a:hover {
 /* LANDING SECTION */
 .landing {
     /* background-color: whitesmoke; */
-    background-image: url(resources/imgs/bg/bg.JPG);
+    background-image: url(/resources/imgs/bg/bg.jpg);
     background-size: cover;
     background-position: center;
     height: 100dvh;
@@ -268,7 +268,7 @@ nav ul li a:hover {
 /* SCHEDULE SCHEDULE */
 .schedule {
     /* background-color: whitesmoke; */
-    background-image: url(resources/imgs/bg/4.PNG);
+    background-image: url(/resources/imgs/bg/4.png);
     background-size: cover;
     background-position: center;
     background-color: rgba(255, 7, 194, 135);
@@ -347,11 +347,11 @@ nav ul li a:hover {
 /* RESULT SECTION */
 .result {
     /* background-color: gainsboro; */
-    background-image: url(resources/imgs/bg/6.PNG);
+    background-image: url(/resources/imgs/bg/6.png);
     background-size: cover;
     background-position: center;
     height: 100dvh;
-    width: 100%;
+    width: 100dvw;
     display: flex;
     position: relative;
     justify-content: center;
@@ -498,6 +498,16 @@ nav ul li a:hover {
 
 /* Smaller Screen */
 @media (max-width: 992px) {
+    .show-nav {
+        transform: translateY(-25%);
+        transition: transform 0.3s ease;
+    }
+
+    .hidden-nav {
+        transform: translateY(-110%);
+        transition: transform 0.3s ease;
+    }
+
     .navbar-address {
         display: none;
     }

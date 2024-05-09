@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <!-- <link rel="stylesheet" href="resources/css/materialize.min.css"> -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/css/materialize.min.css">
+    
+    <!--Import materialize.css-->]
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.4/dist/css/materialize.min.css">
     <link rel="stylesheet" href="resources/css/style.css" media="screen,projection" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="Icon" href="resources/icon/logo_eldental.png">
-    <link rel="stylesheet" href="resources/css/sal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Dental Purwokerto</title>
 </head>
@@ -110,7 +110,7 @@
                 data-sal-delay="200"
                 data-sal-easing="ease-out-back"
                 >
-                    <img src="/resources/imgs/bg/cek-gigi.JPG" alt="">
+                    <img src="resources/imgs/bg/cek-gigi.jpg" alt="">
                 </div>
                 <div class="about-img" id="about-img-2"
                 data-sal-duration="1200" 
@@ -118,7 +118,7 @@
                 data-sal-delay="350"
                 data-sal-easing="ease-out-back"
                 >
-                    <img src="/resources/imgs/bg/klinik.JPG" alt="">
+                    <img src="resources/imgs/bg/klinik.jpg" alt="">
                 </div>
             </div>
             <div class="about-text">
@@ -218,7 +218,6 @@
 
     <!-- LOCATION SECTION -->
     <section class="location" id="location-section">
-        <!-- Background Color Overlay -->
         <div class="location-overlay"></div>
 
         <div class="location-elements">
@@ -260,10 +259,7 @@
                 </div>
             </div>
             <div class="address"
-            data-sal-duration="1200" 
-            data-sal="slide-up" 
-            data-sal-delay="800"
-            data-sal-easing="ease-out-back"
+            data-aos="fade-up"
             >
                 <div class="address-detail teal accent-4 white-text">
                     <h5>Jl. Gelora Indah 2, Mangunjaya, Purwokerto Timur, Banyumas</h5>
@@ -289,14 +285,11 @@
 
     <!-- Materialize JS -->
     <!-- <script src="resources/js/materialize.min.js"></script> -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/js/materialize.min.js"></script>
-    <script type="text/javascript" src="resources/js/sal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.4/dist/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="resources/js/script.js"></script>
     <script>
-        sal({
-            once: false
-        });
+        AOS.init();
     </script>
 </body>
 

@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class="activator waves-effect waves-light" style="position:absolute;top:0;bottom:0;right:0;left:0;"></div>
                             </div>
                             <div class="card-content">
-                                <button class="card-title activator btn waves-effect waves-light teal accent-4"><strong>Info Jadwal</strong></button>
+                                <button class="card-title activator btn waves-effect waves-light teal accent-4 jadwal"><strong>Info Jadwal</strong></button>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title"><i class="material-icons right">close</i>Jadwal</span>

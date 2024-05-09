@@ -1,3 +1,4 @@
+// General Function
 document.addEventListener('DOMContentLoaded', function() {
     // Side Navigation Function
     var elems = document.querySelectorAll('.sidenav');

@@ -12,8 +12,8 @@ button, input, optgroup, select, textarea {
 
 /* BANNER SECTION */
 .banner {
-    position: relative;
     display: flex;
+    position: relative;
     align-items: center;
 }
 
@@ -47,12 +47,13 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .nav-wrapper#navbar-top {
     background-image: linear-gradient(to bottom left, rgb(211, 192, 192) -90%, whitesmoke);
+    width: auto;
 }
 
 .nav-wrapper#navbar-bottom {
@@ -76,7 +77,7 @@ nav ul li a:hover {
 .nav-wrapper.content a {
     padding-left: 3dvw;
     padding-right: 3dvw;
-    font-size: x-large;
+    font-size: 3dvh;
 }
 
 .navbar-address {
@@ -85,7 +86,7 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     left: 35%;
-    font-size: larger;
+    font-size: 2.5dvh;
 }
 
 .navbar-address p {
@@ -112,10 +113,10 @@ nav ul li a:hover {
 
 .contact-us {
     position: fixed;
-    margin-top: 7dvh;
+    padding-top: 7dvh;
     z-index: 1000;
     width: 20dvw;
-    right: 3dvw;
+    right: 5dvw;
     height: auto;
     cursor: pointer; 
     transition: transform 0.3s ease;
@@ -165,12 +166,13 @@ nav ul li a:hover {
 }
 
 .landing-elements h4 {
+    text-shadow: 1px 2px 2px rgb(54, 70, 62);
     font-size: 2.3dvw;
 }
 
 .landing-elements #reservasi-button {
     margin-top: 5dvh;
-    font-size: 2dvw;
+    font-size: 3dvh;
 }
 
 .landing-overlay {
@@ -190,7 +192,7 @@ nav ul li a:hover {
 .about {
     background-color: gainsboro;
     background-position: center;
-    /* height: 100dvh; */
+    height: 100%;
     width: 100%;
     display: flex;
     position: relative;
@@ -279,20 +281,19 @@ nav ul li a:hover {
     align-items: center;
 }
 
-/* .schedule-overlay {
-    background: linear-gradient(to top, rgb(7, 194, 135), rgb(255, 0, 0, 0));
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    position: absolute;
-} */
-
 .schedule .schedule-title {
     position:absolute;
-    top: 10dvh;
-    justify-content: end;
+    justify-content: start;
     vertical-align: top;
+    top: 5dvh;
+    right: 15dvw;
     z-index: 2;
+}
+
+.schedule .schedule-title h2 {
+    text-shadow: 1px 2px 2px black;
+    border-radius: 25px;
+    font-size: 7dvh;
 }
 
 #schedule {
@@ -307,7 +308,8 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 30dvw;
+    top: 5dvh;
+    min-width: 24dvw;
     max-width: 60dvw;
 }
 
@@ -342,7 +344,7 @@ nav ul li a:hover {
     font-size: small;
 }
 
-/* RESULT RESULT */
+/* RESULT SECTION */
 .result {
     /* background-color: gainsboro; */
     background-image: url(/resources/imgs/bg/6.png);
@@ -358,16 +360,18 @@ nav ul li a:hover {
 
 .result .result-title {
     position:absolute;
-    top: 5dvh;
     justify-content: end;
     vertical-align: top;
+    top: 5dvh;
+    left: 15dvw;
 }
 
 .carousel-slider {
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    max-width: 50dvw;
+    background-color: red;
+    width: 50dvw;
     max-height: 50dvh;
 }
 
@@ -375,18 +379,25 @@ nav ul li a:hover {
     /* background-color: white; */
     border-radius: 20px;
     width: 100%;
+    height: 100%;
 }
 
 .carousel-slider .carousel-item img {
     height: 100%;
+    width: 100%;
     border-radius: 20px;
     object-fit: contain;
+}
+
+.testimony {
+    background-color: blue;
+    width: 40dvw;
 }
 
 /* LOCATION SECTION */
 .location {
     background-color: whitesmoke;
-    height: 120dvh;
+    height: 100dvh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -396,7 +407,7 @@ nav ul li a:hover {
 .location-overlay {
     background: linear-gradient(to right, rgb(95, 254, 183), rgb(255, 0, 0, 0));
     width: 100%;
-    height: 120%;
+    height: 100%;
     opacity: 0.3;
     position: absolute;
 }
@@ -408,6 +419,8 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     gap: 2dvh;
+    padding: 0;
+    margin: 0;
 }
 
 .map-images {
@@ -416,6 +429,8 @@ nav ul li a:hover {
     align-items: center;
     justify-content: space-around;
     gap: 2dvw;
+    padding: 0;
+    margin: 0;
 }
 
 .location-logo {
@@ -428,19 +443,13 @@ nav ul li a:hover {
     width: 100%;
 }
 
-.location-image {
-    max-width: 25dvw;
-}
-
-.map-images .location-image img{
-    /* height: 10dvh; */
-    width: 100%;
+.location-image img {
+    min-width: 14dvw;
 }
 
 .map-images .map-location iframe{
-    min-height: 30dvh;
+    max-width: 35dvw;
     max-height: 50dvh;
-    width: 100%;
 }
 
 .address {
@@ -450,10 +459,20 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.address .address-detail {
-    border-radius: 30px;
-    padding: 0 15px 5px 15px;
+.address h5 {
+    font-size: 1.5dvw;
 }
+
+.address .address-detail {
+    padding: 0 1dvw 1dvh 1dvw;
+    border-radius: 30px;
+    max-width: 70dvw;
+    align-self: center;
+}
+
+.address .address-detail h5 {
+    font-size: 1.5dvw;
+} 
 
 .socials {
     display: flex;
@@ -463,18 +482,22 @@ nav ul li a:hover {
     gap: 10vw;
 }
 
+.socials h6 {
+    font-size: 1dvw;
+}
+
 .socials .instagram {
     border-radius: 30px;
-    padding: 0 15px 5px 15px;
+    padding: 0 1dvw 1dvh 1dvw;
 }
 
 .socials .facebook {
     border-radius: 30px;
-    padding: 0 15px 5px 15px;
+    padding: 0 1dvw 1dvh 1dvw;
 }
 
 /* Smaller Screen */
-@media only screen and (max-width: 992px) {
+@media (max-width: 992px) {
     .navbar-address {
         display: none;
     }
@@ -484,9 +507,9 @@ nav ul li a:hover {
     }
 
     .contact-us {
-        width: 35dvw;
+        width: 25dvw;
         bottom: 2dvh;
-        right: 3dvw;
+        right: 10dvw;
     }
 
     .landing-elements {
@@ -515,6 +538,19 @@ nav ul li a:hover {
         /* padding: 5px 5px 5px 5px; */
         font-size: 3dvh;
     }
+
+    .schedule .schedule-title {
+        right: auto;
+    }
+
+    .location-image {
+        display: none;
+    }
+
+    .map-images .map-location iframe{
+        max-width: 50dvw;
+        max-height: 40dvh;
+    }
 }
 
 @media (max-width: 450px) {
@@ -523,6 +559,12 @@ nav ul li a:hover {
         width: 35dvw;
         /* padding: 5px 5px 5px 5px; */
         font-size: 4dvw;
+    }
+
+    .contact-us {
+        width: 40dvw;
+        bottom: 2dvh;
+        right: 3dvw;
     }
 
     .about-elements {
@@ -545,5 +587,39 @@ nav ul li a:hover {
 
     .about-text h2 {
         font-size: 5dvh;
+    }
+
+    .schedule .schedule-title {
+        top: 15dvh;
+    }
+
+    .schedule .schedule-title h2 {
+        font-size: 10dvw;
+    }
+
+    .location-elements {
+        gap: 5dvh;
+    }
+
+    .address h5 {
+        font-size: 4dvw;
+    }
+
+    .address .address-detail h5 {
+        font-size: 4dvw;
+    } 
+
+    .socials h6 {
+        font-size: 3dvw;
+    }
+    
+    .socials .instagram {
+        border-radius: 30px;
+        padding: 0 3dvw 0 3dvw;
+    }
+    
+    .socials .facebook {
+        border-radius: 30px;
+        padding: 0 3dvw 0 3dvw;
     }
 }

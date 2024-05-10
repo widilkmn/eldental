@@ -173,8 +173,11 @@ nav ul li a:hover {
 }
 
 .landing-elements #reservasi-button {
+    justify-content: center;
+    border-radius: 30px;
     margin-top: 5dvh;
     font-size: 3dvh;
+    width: 15dvw;
 }
 
 .landing-overlay {
@@ -183,11 +186,6 @@ nav ul li a:hover {
     height: 100%;
     opacity: 0.5;
     position: absolute;
-}
-
-#reservasi-button {
-    border-radius: 30px;
-    width: 15dvw;
 }
 
 /* ABOUT SECTION */

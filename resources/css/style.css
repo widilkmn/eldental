@@ -217,8 +217,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 90%;
-    margin: 5em;
+    width: 80vw;
     gap: 4vw;
     z-index: 1;
 }
@@ -586,7 +585,7 @@ nav ul li a:hover {
     }
 
     .about-images {
-        width: 60vw;
+        width: 100%;
     }
 
     .about-text h2 {

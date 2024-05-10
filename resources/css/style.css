@@ -217,7 +217,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80vw;
+    max-width: 80vw;
     gap: 4vw;
     z-index: 1;
 }
@@ -609,7 +609,7 @@ nav ul li a:hover {
     }
 
     .carousel-slider {
-        width: 60vw;
+        max-width: 60vw;
     }
 
     .location-image {
@@ -677,7 +677,7 @@ nav ul li a:hover {
     }
 
     .carousel-slider {
-        width: 80vw;
+        max-width: 80vw;
     }
 
     .location-elements {

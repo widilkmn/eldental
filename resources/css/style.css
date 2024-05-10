@@ -137,7 +137,7 @@ nav ul li a:hover {
 /* LANDING SECTION */
 .landing {
     /* background-color: whitesmoke; */
-    background-image: url(/resources/imgs/bg/bg.jpg);
+    background-image: url(../imgs/bg/bg.jpg);
     background-size: cover;
     background-position: center;
     height: 100dvh;
@@ -268,7 +268,7 @@ nav ul li a:hover {
 /* SCHEDULE SCHEDULE */
 .schedule {
     /* background-color: whitesmoke; */
-    background-image: url(/resources/imgs/bg/4.png);
+    background-image: url(resources/imgs/bg/4.png);
     background-size: cover;
     background-position: center;
     background-color: rgba(255, 7, 194, 135);
@@ -347,7 +347,7 @@ nav ul li a:hover {
 /* RESULT SECTION */
 .result {
     /* background-color: gainsboro; */
-    background-image: url(/resources/imgs/bg/6.png);
+    background-image: url(resources/imgs/bg/6.png);
     background-size: cover;
     background-position: center;
     height: 100dvh;

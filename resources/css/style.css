@@ -99,7 +99,7 @@ nav ul li a:hover {
 .navbar-address p {
     margin: 0;
     padding: 0;
-    line-height: 1.5;
+    line-height: 1.2;
     text-align: center;
 }
 
@@ -229,7 +229,7 @@ nav ul li a:hover {
     justify-content: space-around;
     align-items: center;
     gap: 2vh;
-    width: 50%;
+    max-width: 50vw;
 }
 
 .about-img#about-img-1 img {

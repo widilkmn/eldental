@@ -565,7 +565,7 @@ nav ul li a:hover {
     }
 
     .about-images {
-        width: 100%;
+        width: 45%;
     }
 
     .about-text h2 {
@@ -589,7 +589,7 @@ nav ul li a:hover {
     }
 
     .carousel-slider {
-        width: 60vw;
+        
     }
 
     .location-image {

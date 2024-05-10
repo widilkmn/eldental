@@ -37,7 +37,7 @@ button, input, optgroup, select, textarea {
 
 /* Change position for Contact-us Button */
 .bottom-right {
-    transform: translateY(80dvh);
+    transform: translateY(80vh);
     transition: transform 0.3s ease; /* Add smooth transition effect */
 }
 
@@ -63,11 +63,11 @@ nav ul li a:hover {
 }
 
 .nav-wrapper img {
-    max-width: 15dvw;
+    max-width: 15vw;
     max-height: 100%;
     object-fit: cover;
-    margin-top: 3dvh;
-    margin-bottom: 3dvh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 .nav-wrapper.content {
@@ -77,9 +77,9 @@ nav ul li a:hover {
 }
 
 .nav-wrapper.content a {
-    padding-left: 3dvw;
-    padding-right: 3dvw;
-    font-size: 3dvh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 3vh;
 }
 
 .navbar-address {
@@ -88,7 +88,7 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     left: 35%;
-    font-size: 2.5dvh;
+    font-size: 2.5vh;
 }
 
 .navbar-address p {
@@ -115,10 +115,10 @@ nav ul li a:hover {
 
 .contact-us {
     position: fixed;
-    padding-top: 5dvh;
+    padding-top: 5vh;
     z-index: 1000;
-    width: 20dvw;
-    right: 5dvw;
+    width: 20vw;
+    right: 5vw;
     height: auto;
     cursor: pointer; 
     transition: transform 0.3s ease;
@@ -142,7 +142,7 @@ nav ul li a:hover {
     background: url(../imgs/bg/bg.jpg);
     background-size: cover;
     background-position: center;
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     display: flex;
     position: relative;
@@ -156,28 +156,28 @@ nav ul li a:hover {
     justify-content: flex-start;
     align-items: flex-start;
     position: absolute;
-    bottom: 20dvh;
-    left: 3dvw;
-    max-width: 45dvw;
+    bottom: 20vh;
+    left: 3vw;
+    max-width: 45vw;
     z-index: 1;
 }
 
 .landing-elements h1 {
     text-shadow: 1px 2px 2px black;
-    font-size: 4dvw;
+    font-size: 4vw;
 }
 
 .landing-elements h4 {
     text-shadow: 1px 2px 2px rgb(54, 70, 62);
-    font-size: 2.3dvw;
+    font-size: 2.3vw;
 }
 
 .landing-elements #reservasi-button {
     justify-content: center;
     border-radius: 30px;
-    margin-top: 5dvh;
-    font-size: 3dvh;
-    width: 15dvw;
+    margin-top: 5vh;
+    font-size: 3vh;
+    width: 15vw;
 }
 
 .landing-overlay {
@@ -214,7 +214,7 @@ nav ul li a:hover {
     align-items: center;
     max-width: 80%;
     margin: 5em;
-    gap: 4dvw;
+    gap: 4vw;
     z-index: 1;
 }
 
@@ -223,7 +223,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
-    gap: 2dvh;
+    gap: 2vh;
     width: 50%;
 }
 
@@ -231,7 +231,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     min-width: 250px;
-    max-width: 30dvw;
+    max-width: 30vw;
     border-radius: 20px;
 }
 
@@ -239,7 +239,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     min-width: 250px;
-    max-width: 29dvw;
+    max-width: 29vw;
     border-radius: 20px;
 }
 
@@ -254,15 +254,15 @@ nav ul li a:hover {
 .about-text img {
     align-self: center;
     min-width: 150px;
-    max-width: 15dvw;
+    max-width: 15vw;
 }
 
 .about-text h2 {
-    font-size: 8dvh;
+    font-size: 8vh;
 }
 
 .about-text p {
-    font-size: 3dvh;
+    font-size: 3vh;
 }
 
 /* SCHEDULE SCHEDULE */
@@ -272,7 +272,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     background-color: rgba(255, 7, 194, 135);
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     display: flex;
     position: relative;
@@ -285,19 +285,19 @@ nav ul li a:hover {
     position:absolute;
     justify-content: start;
     vertical-align: top;
-    top: 5dvh;
-    right: 15dvw;
+    top: 5vh;
+    right: 15vw;
     z-index: 2;
 }
 
 .schedule .schedule-title h2 {
     text-shadow: 1px 2px 2px black;
     border-radius: 25px;
-    font-size: 7dvh;
+    font-size: 7vh;
 }
 
 #schedule {
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     z-index: 1;
 }
@@ -308,21 +308,21 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 5dvh;
-    min-width: 24dvw;
-    max-width: 60dvw;
+    top: 5vh;
+    min-width: 24vw;
+    max-width: 60vw;
 }
 
 .card {
-    min-width: 10dvw;
+    min-width: 10vw;
 }
 
 .card-image img {
     background-color: white;
-    /* width: 50dvh; */
+    /* width: 50vh; */
     width: 100%;
     height: 100%;
-    max-height: 45dvh;
+    max-height: 45vh;
     object-fit: contain;
 }
 
@@ -350,8 +350,8 @@ nav ul li a:hover {
     background: url(../imgs/bg/6.png);
     background-size: cover;
     background-position: center;
-    height: 100dvh;
-    width: 100dvw;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     position: relative;
     justify-content: center;
@@ -362,8 +362,8 @@ nav ul li a:hover {
     position:absolute;
     justify-content: end;
     vertical-align: top;
-    top: 5dvh;
-    left: 15dvw;
+    top: 5vh;
+    left: 15vw;
 }
 
 .carousel-slider {
@@ -371,8 +371,8 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center; */
     background-color: red;
-    width: 50dvw;
-    max-height: 50dvh;
+    width: 50vw;
+    max-height: 50vh;
 }
 
 .carousel-slider .carousel-item {
@@ -391,13 +391,13 @@ nav ul li a:hover {
 
 .testimony {
     background-color: blue;
-    width: 40dvw;
+    width: 40vw;
 }
 
 /* LOCATION SECTION */
 .location {
     background-color: whitesmoke;
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -418,7 +418,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2dvh;
+    gap: 2vh;
     padding: 0;
     margin: 0;
 }
@@ -428,7 +428,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    gap: 2dvw;
+    gap: 2vw;
     padding: 0;
     margin: 0;
 }
@@ -436,7 +436,7 @@ nav ul li a:hover {
 .location-logo {
     display: flex;
     justify-content: center;
-    max-width: 20dvw;
+    max-width: 20vw;
 }
 
 .location-logo img {
@@ -444,12 +444,12 @@ nav ul li a:hover {
 }
 
 .location-image img {
-    min-width: 14dvw;
+    min-width: 14vw;
 }
 
 .map-images .map-location iframe{
-    max-width: 35dvw;
-    max-height: 50dvh;
+    max-width: 35vw;
+    max-height: 50vh;
 }
 
 .address {
@@ -460,18 +460,18 @@ nav ul li a:hover {
 }
 
 .address h5 {
-    font-size: 1.5dvw;
+    font-size: 1.5vw;
 }
 
 .address .address-detail {
-    padding: 0 1dvw 1dvh 1dvw;
+    padding: 0 1vw 1vh 1vw;
     border-radius: 30px;
-    max-width: 70dvw;
+    max-width: 70vw;
     align-self: center;
 }
 
 .address .address-detail h5 {
-    font-size: 1.5dvw;
+    font-size: 1.5vw;
 } 
 
 .socials {
@@ -483,17 +483,17 @@ nav ul li a:hover {
 }
 
 .socials h6 {
-    font-size: 1dvw;
+    font-size: 1vw;
 }
 
 .socials .instagram {
     border-radius: 30px;
-    padding: 0 1dvw 1dvh 1dvw;
+    padding: 0 1vw 1vh 1vw;
 }
 
 .socials .facebook {
     border-radius: 30px;
-    padding: 0 1dvw 1dvh 1dvw;
+    padding: 0 1vw 1vh 1vw;
 }
 
 /* Smaller Screen */
@@ -517,9 +517,9 @@ nav ul li a:hover {
     }
 
     .contact-us {
-        width: 25dvw;
-        bottom: 2dvh;
-        right: 10dvw;
+        width: 25vw;
+        bottom: 2vh;
+        right: 5vw;
     }
 
     .landing-elements {
@@ -529,24 +529,24 @@ nav ul li a:hover {
         left: auto;
         /* bottom: 0; */
         text-align: center;
-        max-width: 70dvw;
+        max-width: 70vw;
     }
 
     .landing-elements h1 {
         text-shadow: 1px 2px 2px black;
-        font-size: 5dvh;
+        font-size: 5vh;
     }
 
     .landing-elements h4 {
         /* text-shadow: 1px 2px 2px black; */
-        font-size: 4dvh;
+        font-size: 4vh;
     }
 
     #reservasi-button {
         min-width: 150px;
-        width: 35dvw;
+        width: 35vw;
         /* padding: 5px 5px 5px 5px; */
-        font-size: 3dvh;
+        font-size: 3vh;
     }
 
     .schedule .schedule-title {
@@ -558,23 +558,23 @@ nav ul li a:hover {
     }
 
     .map-images .map-location iframe{
-        max-width: 50dvw;
-        max-height: 40dvh;
+        max-width: 50vw;
+        max-height: 40vh;
     }
 }
 
 @media (max-width: 450px) {
     #reservasi-button {
         /* min-width: 150px; */
-        width: 35dvw;
+        width: 35vw;
         /* padding: 5px 5px 5px 5px; */
-        font-size: 4dvw;
+        font-size: 4vw;
     }
 
     .contact-us {
-        width: 40dvw;
-        bottom: 2dvh;
-        right: 3dvw;
+        width: 40vw;
+        bottom: 2vh;
+        right: 3vw;
     }
 
     .about-elements {
@@ -586,7 +586,7 @@ nav ul li a:hover {
     }
 
     .about-text {
-        padding-top: 3dvh;
+        padding-top: 3vh;
         width: 100%;
     }
 
@@ -596,40 +596,40 @@ nav ul li a:hover {
     }
 
     .about-text h2 {
-        font-size: 5dvh;
+        font-size: 5vh;
     }
 
     .schedule .schedule-title {
-        top: 15dvh;
+        top: 15vh;
     }
 
     .schedule .schedule-title h2 {
-        font-size: 10dvw;
+        font-size: 10vw;
     }
 
     .location-elements {
-        gap: 5dvh;
+        gap: 5vh;
     }
 
     .address h5 {
-        font-size: 4dvw;
+        font-size: 4vw;
     }
 
     .address .address-detail h5 {
-        font-size: 4dvw;
+        font-size: 4vw;
     } 
 
     .socials h6 {
-        font-size: 3dvw;
+        font-size: 3vw;
     }
     
     .socials .instagram {
         border-radius: 30px;
-        padding: 0 3dvw 0 3dvw;
+        padding: 0 3vw 0 3vw;
     }
     
     .socials .facebook {
         border-radius: 30px;
-        padding: 0 3dvw 0 3dvw;
+        padding: 0 3vw 0 3vw;
     }
 }

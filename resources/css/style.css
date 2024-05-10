@@ -580,13 +580,13 @@ nav ul li a:hover {
         font-size: 3svw;
     }
 
-    /* .about-elements {
+    .about-elements {
         flex-direction: column;
-    } */
-
-    .about-images {
-        width: 100%;
     }
+
+    /* .about-images {
+        width: 100%;
+    } */
 
     .about-text h2 {
         font-size: 4vh;

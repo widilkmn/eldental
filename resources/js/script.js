@@ -1,3 +1,8 @@
+window.onload = function() {
+    // Adjust the value (100 in this case) to scroll more or less
+    window.scrollBy(0, -100); // Negative value scrolls up
+}
+
 // General Function
 document.addEventListener('DOMContentLoaded', function() {
     // Side Navigation Function
@@ -116,7 +121,7 @@ window.addEventListener('scroll', function() {
 
 
     // Get the current scroll position
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = document.documentElement.scrollTop;
 
     // Determine the scroll direction
     if (scrollTop > lastScrollTop) {
@@ -152,5 +157,3 @@ toggleNavContentVisibility();
 
 // Listen for window resize event to update visibility
 window.addEventListener('resize', toggleNavContentVisibility);
-
-

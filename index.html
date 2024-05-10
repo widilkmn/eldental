@@ -6,7 +6,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
-    <!--Import materialize.css-->]
+    <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.4/dist/css/materialize.min.css">
     <link rel="stylesheet" href="resources/css/style.css" media="screen,projection" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,280 +17,281 @@
 </head>
 
 <body>
-
-    <!-- NAVIGATION & SIDENAV -->
-    <section class="banner">
-        <div class="navbar-fixed">
-            <nav class="nav-extended" id="main-navbar">
-                <div class="nav-wrapper grey lighten-3" id="navbar-top">
-                    <img src="resources/icon/logo-eldental.png" class="responsive-img logo-navbar" alt="">
-                    <div class="navbar-address">
-                        <p>
-                            <b class="blue-text text-darken-2">elDental Purwokerto Kids & Family Dental
-                                Care</b><br>
-                            <span class="black-text">Jl. Gelora Indah 2, Mangunjaya, Purwokerto Timur, Banyumas</span>
-                            <br>
-                            <b class="black-text">08112622226</b>
-                        </p>
+    <div class="body">
+        <!-- NAVIGATION & SIDENAV -->
+        <section class="banner">
+            <div class="navbar-fixed">
+                <nav class="nav-extended" id="main-navbar">
+                    <div class="nav-wrapper grey lighten-3" id="navbar-top">
+                        <img src="resources/icon/logo-eldental.png" class="responsive-img logo-navbar" alt="">
+                        <div class="navbar-address">
+                            <p>
+                                <b class="blue-text text-darken-2">elDental Purwokerto Kids & Family Dental
+                                    Care</b><br>
+                                <span class="black-text">Jl. Gelora Indah 2, Mangunjaya, Purwokerto Timur, Banyumas</span>
+                                <br>
+                                <b class="black-text">08112622226</b>
+                            </p>
+                        </div>
+                        <div class="hamburger-icon">
+                            <a href="#" data-target="slide-out" class="sidenav-trigger"><i
+                                    class="material-icons">menu</i></a>
+                        </div>
                     </div>
-                    <div class="hamburger-icon">
-                        <a href="#" data-target="slide-out" class="sidenav-trigger"><i
-                                class="material-icons">menu</i></a>
+                    <div class="nav-wrapper content grey lighten-2" id="navbar-bottom">
+                        <ul class="right hide-on-med-and-down">
+                            <li><a class="waves-effect teal-text text-accent-4" href="#landing-section">HOME</a></li>
+                            <li><a class="waves-effect teal-text text-accent-4" href="#about-section">ABOUT</a></li>
+                            <li><a class="waves-effect teal-text text-accent-4" href="#schedule-section">JADWAL PRAKTEK</a>
+                            </li>
+                            <li><a class="waves-effect teal-text text-accent-4" href="#result-section">GALLERY</a></li>
+                            <li><a class="waves-effect teal-text text-accent-4" href="#location-section">FIND US</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+    
+            <ul class="sidenav" id="slide-out">
+                <li><a class="menu-item waves-effect" href="#landing-section">HOME</a></li>
+                <li><a class="menu-item waves-effect" href="#about-section">ABOUT</a></li>
+                <li><a class="menu-item waves-effect" href="#schedule-section">JADWAL PRAKTEK</a></li>
+                <li><a class="menu-item waves-effect" href="#result-section">GALLERY</a></li>
+                <li><a class="menu-item waves-effect" href="#location-section">FIND US</a></li>
+            </ul>
+            <div class="contact-us" id="contact-us">
+                <a href="https://bit.ly/2rq3pje" target="_blank"><img src="resources/icon/contact-us.png" alt=""></a>
+            </div>
+        </section>
+    
+        <!-- LANDING SECTION -->
+        <section class="landing" id="landing-section">
+            <!-- Background Color Overlay -->
+            <div class="landing-overlay"></div>
+            <div class="landing-elements">
+                <div
+                data-sal-duration="1500" 
+                data-sal="fade" 
+                data-sal-delay="200"
+                data-sal-easing="ease-out-back"
+                >
+                    <h1 class="white-text"><b>KONSULTASIKAN MASALAH GIGI KAMU</b></h1>
+                </div>
+                <div
+                data-sal-duration="1500" 
+                data-sal="fade" 
+                data-sal-delay="350"
+                data-sal-easing="ease-out-back"
+                >
+                    <h4 class="teal-text text-lighten-5">DENGAN DRG SPESIALIS DAN DRG UMUM KAMI</h4>
+                </div>
+                <div
+                data-sal-duration="1500" 
+                data-sal="fade" 
+                data-sal-delay="500"
+                data-sal-easing="ease-out-back"
+                >
+                    <a href="https://bit.ly/2rq3pje" target="_blank"
+                        class="btn filled rounded waves-effect waves-light deep-orange darken-3" id="reservasi-button">
+                        RESERVASI
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- ABOUT SECTION -->
+        <section class="about" id="about-section">
+            <!-- Background Color Overlay -->
+            <div class="about-overlay"></div>
+            <div class="about-elements">
+                <div class="about-images">
+                    <div class="about-img" id="about-img-1"
+                    data-sal-duration="1200" 
+                    data-sal="slide-right" 
+                    data-sal-delay="200"
+                    data-sal-easing="ease-out-back"
+                    >
+                        <img src="resources/imgs/bg/cek-gigi.jpg" alt="">
+                    </div>
+                    <div class="about-img" id="about-img-2"
+                    data-sal-duration="1200" 
+                    data-sal="slide-right" 
+                    data-sal-delay="350"
+                    data-sal-easing="ease-out-back"
+                    >
+                        <img src="resources/imgs/bg/klinik.jpg" alt="">
                     </div>
                 </div>
-                <div class="nav-wrapper content grey lighten-2" id="navbar-bottom">
-                    <ul class="right hide-on-med-and-down">
-                        <li><a class="waves-effect teal-text text-accent-4" href="#landing-section">HOME</a></li>
-                        <li><a class="waves-effect teal-text text-accent-4" href="#about-section">ABOUT</a></li>
-                        <li><a class="waves-effect teal-text text-accent-4" href="#schedule-section">JADWAL PRAKTEK</a>
-                        </li>
-                        <li><a class="waves-effect teal-text text-accent-4" href="#result-section">GALLERY</a></li>
-                        <li><a class="waves-effect teal-text text-accent-4" href="#location-section">FIND US</a></li>
-                    </ul>
+                <div class="about-text">
+                    <div
+                    data-sal-duration="1000" 
+                    data-sal="slide-up" 
+                    data-sal-delay="200"
+                    data-sal-easing="ease-out-back"
+                    >
+                        <img src="resources/icon/logo-eldental.png" class="responsive-img logo-navbar" alt="">
+                    </div>
+                    <div
+                    data-sal-duration="1000" 
+                    data-sal="slide-up" 
+                    data-sal-delay="350"
+                    data-sal-easing="ease-out-back"
+                    >
+                        <h2 class="teal-text text-accent-4"><b>Klinik Gigi Keluarga</b></h2>
+                    </div>
+                    <p
+                    data-sal-duration="1000" 
+                    data-sal="slide-up" 
+                    data-sal-delay="500"
+                    data-sal-easing="ease-out-back"
+                    >
+                        Sejak berdiri tahun 2019 elDental Purwokerto telah melayani
+                        lebih dari 5000 pasien dengan berbagai macam perawatan
+                        gigi umum, gigi anak, perawatan behel, bedah mulut,
+                        perawatan saluran akar, hingga pembuatan gigi palsu
+                    </p>
                 </div>
-            </nav>
-        </div>
-
-        <ul class="sidenav" id="slide-out">
-            <li><a class="menu-item waves-effect" href="#landing-section">HOME</a></li>
-            <li><a class="menu-item waves-effect" href="#about-section">ABOUT</a></li>
-            <li><a class="menu-item waves-effect" href="#schedule-section">JADWAL PRAKTEK</a></li>
-            <li><a class="menu-item waves-effect" href="#result-section">GALLERY</a></li>
-            <li><a class="menu-item waves-effect" href="#location-section">FIND US</a></li>
-        </ul>
-        <div class="contact-us" id="contact-us">
-            <a href="https://bit.ly/2rq3pje" target="_blank"><img src="resources/icon/contact-us.png" alt=""></a>
-        </div>
-    </section>
-
-    <!-- LANDING SECTION -->
-    <section class="landing" id="landing-section">
-        <!-- Background Color Overlay -->
-        <div class="landing-overlay"></div>
-        <div class="landing-elements">
-            <div
+            </div>
+        </section>
+    
+        <!-- SCHEDULE SECTION -->
+        <section class="schedule" id="schedule-section">
+            <!-- Background Color Overlay -->
+            <div class="schedule-overlay"></div>
+    
+            <div class="schedule-title"
             data-sal-duration="1500" 
-            data-sal="fade" 
+            data-sal="slide-right" 
             data-sal-delay="200"
             data-sal-easing="ease-out-back"
             >
-                <h1 class="white-text"><b>KONSULTASIKAN MASALAH GIGI KAMU</b></h1>
+                <h2 class="white-text"><b>Jadwal Praktek</b></h2>
             </div>
-            <div
+            <div class="carousel" id="schedule"
             data-sal-duration="1500" 
-            data-sal="fade" 
+            data-sal="slide-up" 
             data-sal-delay="350"
             data-sal-easing="ease-out-back"
             >
-                <h4 class="teal-text text-lighten-5">DENGAN DRG SPESIALIS DAN DRG UMUM KAMI</h4>
+    
             </div>
-            <div
+        </section>
+    
+        <!-- RESULT SECTION -->
+        <section class="result" id="result-section">
+            <div class="result-title"
             data-sal-duration="1500" 
-            data-sal="fade" 
-            data-sal-delay="500"
+            data-sal="slide-left" 
+            data-sal-delay="200"
             data-sal-easing="ease-out-back"
             >
-                <a href="https://bit.ly/2rq3pje" target="_blank"
-                    class="btn filled rounded waves-effect waves-light deep-orange darken-3" id="reservasi-button">
-                    RESERVASI
+                <h2 class="teal-text text-accent-4"><b>Hasil Perawatan</b></h2>
+            </div>
+            <div class="carousel carousel-slider" id="carousel-result"
+            data-sal-duration="1500" 
+            data-sal="slide-up" 
+            data-sal-delay="350"
+            data-sal-easing="ease-out-back"
+            >
+                <a class="carousel-item" href="#one!">
+                    <img src="resources/imgs/before-after/1.png">
+                </a>
+                <a class="carousel-item" href="#two!">
+                    <img src="resources/imgs/before-after/2.png">
+                </a>
+                <a class="carousel-item" href="#three!">
+                    <img src="resources/imgs/before-after/3.png">
+                </a>
+                <a class="carousel-item" href="#four!">
+                    <img src="resources/imgs/before-after/4.png">
+                </a>
+                <a class="carousel-item" href="#five!">
+                    <img src="resources/imgs/before-after/5.png">
+                </a>
+                <a class="carousel-item" href="#six!">
+                    <img src="resources/imgs/before-after/6.png">
+                </a>
+                <a class="carousel-item" href="#seven!">
+                    <img src="resources/imgs/before-after/7.png">
                 </a>
             </div>
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="about" id="about-section">
-        <!-- Background Color Overlay -->
-        <div class="about-overlay"></div>
-        <div class="about-elements">
-            <div class="about-images">
-                <div class="about-img" id="about-img-1"
-                data-sal-duration="1200" 
-                data-sal="slide-right" 
-                data-sal-delay="200"
-                data-sal-easing="ease-out-back"
-                >
-                    <img src="resources/imgs/bg/cek-gigi.jpg" alt="">
-                </div>
-                <div class="about-img" id="about-img-2"
-                data-sal-duration="1200" 
-                data-sal="slide-right" 
-                data-sal-delay="350"
-                data-sal-easing="ease-out-back"
-                >
-                    <img src="resources/imgs/bg/klinik.jpg" alt="">
-                </div>
-            </div>
-            <div class="about-text">
-                <div
-                data-sal-duration="1000" 
-                data-sal="slide-up" 
+        </section>
+    
+        <!-- LOCATION SECTION -->
+        <section class="location" id="location-section">
+            <div class="location-overlay"></div>
+    
+            <div class="location-elements">
+                <div class="location-logo"
+                data-sal-duration="1500" 
+                data-sal="slide-down" 
                 data-sal-delay="200"
                 data-sal-easing="ease-out-back"
                 >
                     <img src="resources/icon/logo-eldental.png" class="responsive-img logo-navbar" alt="">
                 </div>
-                <div
-                data-sal-duration="1000" 
-                data-sal="slide-up" 
-                data-sal-delay="350"
-                data-sal-easing="ease-out-back"
-                >
-                    <h2 class="teal-text text-accent-4"><b>Klinik Gigi Keluarga</b></h2>
+                <div class="map-images">
+                    <div class="location-image"
+                    data-sal-duration="1200" 
+                    data-sal="slide-up" 
+                    data-sal-delay="350"
+                    data-sal-easing="ease-out-back"
+                    >
+                        <img src="resources/imgs/bg/images.jpg">
+                    </div>
+                    <div class="map-location"
+                    data-sal-duration="1200" 
+                    data-sal="slide-up" 
+                    data-sal-delay="500"
+                    data-sal-easing="ease-out-back"
+                    >
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15825.700613921728!2d109.2499905!3d-7.4181096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f7d238fa33f%3A0x92c22eb5619080fc!2seldental%20Purwokerto%20Kids%20%26%20Family%20Dental%20Care!5e0!3m2!1sen!2sid!4v1713886280009!5m2!1sen!2sid"
+                            width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="location-image"
+                    data-sal-duration="1200" 
+                    data-sal="slide-up" 
+                    data-sal-delay="650"
+                    data-sal-easing="ease-out-back"
+                    >
+                        <img src="resources/imgs/bg/images.jpg">
+                    </div>
                 </div>
-                <p
-                data-sal-duration="1000" 
-                data-sal="slide-up" 
-                data-sal-delay="500"
-                data-sal-easing="ease-out-back"
+                <div class="address"
+                data-aos="fade-up"
                 >
-                    Sejak berdiri tahun 2019 elDental Purwokerto telah melayani
-                    lebih dari 5000 pasien dengan berbagai macam perawatan
-                    gigi umum, gigi anak, perawatan behel, bedah mulut,
-                    perawatan saluran akar, hingga pembuatan gigi palsu
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SCHEDULE SECTION -->
-    <section class="schedule" id="schedule-section">
-        <!-- Background Color Overlay -->
-        <div class="schedule-overlay"></div>
-
-        <div class="schedule-title"
-        data-sal-duration="1500" 
-        data-sal="slide-right" 
-        data-sal-delay="200"
-        data-sal-easing="ease-out-back"
-        >
-            <h2 class="white-text"><b>Jadwal Praktek</b></h2>
-        </div>
-        <div class="carousel" id="schedule"
-        data-sal-duration="1500" 
-        data-sal="slide-up" 
-        data-sal-delay="350"
-        data-sal-easing="ease-out-back"
-        >
-
-        </div>
-    </section>
-
-    <!-- RESULT SECTION -->
-    <section class="result" id="result-section">
-        <div class="result-title"
-        data-sal-duration="1500" 
-        data-sal="slide-left" 
-        data-sal-delay="200"
-        data-sal-easing="ease-out-back"
-        >
-            <h2 class="teal-text text-accent-4"><b>Hasil Perawatan</b></h2>
-        </div>
-        <div class="carousel carousel-slider" id="carousel-result"
-        data-sal-duration="1500" 
-        data-sal="slide-up" 
-        data-sal-delay="350"
-        data-sal-easing="ease-out-back"
-        >
-            <a class="carousel-item" href="#one!">
-                <img src="resources/imgs/before-after/1.png">
-            </a>
-            <a class="carousel-item" href="#two!">
-                <img src="resources/imgs/before-after/2.png">
-            </a>
-            <a class="carousel-item" href="#three!">
-                <img src="resources/imgs/before-after/3.png">
-            </a>
-            <a class="carousel-item" href="#four!">
-                <img src="resources/imgs/before-after/4.png">
-            </a>
-            <a class="carousel-item" href="#five!">
-                <img src="resources/imgs/before-after/5.png">
-            </a>
-            <a class="carousel-item" href="#six!">
-                <img src="resources/imgs/before-after/6.png">
-            </a>
-            <a class="carousel-item" href="#seven!">
-                <img src="resources/imgs/before-after/7.png">
-            </a>
-        </div>
-    </section>
-
-    <!-- LOCATION SECTION -->
-    <section class="location" id="location-section">
-        <div class="location-overlay"></div>
-
-        <div class="location-elements">
-            <div class="location-logo"
-            data-sal-duration="1500" 
-            data-sal="slide-down" 
-            data-sal-delay="200"
-            data-sal-easing="ease-out-back"
-            >
-                <img src="resources/icon/logo-eldental.png" class="responsive-img logo-navbar" alt="">
-            </div>
-            <div class="map-images">
-                <div class="location-image"
+                    <div class="address-detail teal accent-4 white-text">
+                        <h5>Jl. Gelora Indah 2, Mangunjaya, Purwokerto Timur, Banyumas</h5>
+                    </div>
+                    <h5 class="blue-text text-darken-2"><strong>elDental Purwokerto Kids & Family Dental Care</strong></h5>
+                </div>
+                <div class="socials"
                 data-sal-duration="1200" 
                 data-sal="slide-up" 
-                data-sal-delay="350"
+                data-sal-delay="950"
                 data-sal-easing="ease-out-back"
                 >
-                    <img src="resources/imgs/bg/images.jpg">
-                </div>
-                <div class="map-location"
-                data-sal-duration="1200" 
-                data-sal="slide-up" 
-                data-sal-delay="500"
-                data-sal-easing="ease-out-back"
-                >
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15825.700613921728!2d109.2499905!3d-7.4181096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f7d238fa33f%3A0x92c22eb5619080fc!2seldental%20Purwokerto%20Kids%20%26%20Family%20Dental%20Care!5e0!3m2!1sen!2sid!4v1713886280009!5m2!1sen!2sid"
-                        width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="location-image"
-                data-sal-duration="1200" 
-                data-sal="slide-up" 
-                data-sal-delay="650"
-                data-sal-easing="ease-out-back"
-                >
-                    <img src="resources/imgs/bg/images.jpg">
+                    <div class="instagram teal accent-4 white-text">
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <h6>Instagram</h6>
+                    </div>
+                    <div class="facebook teal accent-4 white-text">
+                        <h6>Facebook</h6>
+                    </div>
                 </div>
             </div>
-            <div class="address"
-            data-aos="fade-up"
-            >
-                <div class="address-detail teal accent-4 white-text">
-                    <h5>Jl. Gelora Indah 2, Mangunjaya, Purwokerto Timur, Banyumas</h5>
-                </div>
-                <h5 class="blue-text text-darken-2"><strong>elDental Purwokerto Kids & Family Dental Care</strong></h5>
-            </div>
-            <div class="socials"
-            data-sal-duration="1200" 
-            data-sal="slide-up" 
-            data-sal-delay="950"
-            data-sal-easing="ease-out-back"
-            >
-                <div class="instagram teal accent-4 white-text">
-                    <i class="fa-brands fa-square-instagram"></i>
-                    <h6>Instagram</h6>
-                </div>
-                <div class="facebook teal accent-4 white-text">
-                    <h6>Facebook</h6>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Materialize JS -->
-    <!-- <script src="resources/js/materialize.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.4/dist/js/materialize.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="resources/js/script.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
+        </section>
+    
+        <!-- Materialize JS -->
+        <!-- <script src="resources/js/materialize.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.4/dist/js/materialize.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript" src="resources/js/script.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+    </div>
 
 </html>

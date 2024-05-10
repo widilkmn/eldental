@@ -603,6 +603,10 @@ nav ul li a:hover {
         /* font-size: 4vh; */
     }
 
+    .jadwal p {
+        font-size: small;
+    }
+
     .result .result-title h2 {
         /* font-size: 4vh; */
     }

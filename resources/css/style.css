@@ -683,13 +683,21 @@ nav ul li a:hover {
         gap: 5vh;
     }
 
+    .address {
+        width: 80vw;
+    }
+
     .address h5 {
         /* font-size: 4vw; */
     }
 
     .address .address-detail h5 {
         /* font-size: 4vw; */
-    } 
+    }
+
+    .socials {
+        width: 80vw;
+    }
 
     .socials h6 {
         /* font-size: 3vw; */

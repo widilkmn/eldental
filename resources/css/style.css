@@ -564,6 +564,10 @@ nav ul li a:hover {
         font-size: 2vw;
     }
 
+    .about-images {
+        max-width: 80vw;
+    }
+
     .about-text h2 {
         font-size: 4vh;
     }

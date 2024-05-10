@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var menuItems = document.querySelectorAll('.sidenav .menu-item');
     menuItems.forEach(function(item) {
         item.addEventListener('click', function() {
+            console.log(elems[0]);
             var instance = M.Sidenav.getInstance(elems[0]);
             console.log('Sidenav Instance:', instance);
             if (instance) {
@@ -69,17 +70,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
     // Carousel Result Image Function
-    var elems = document.querySelectorAll('#carousel-result');
+    var resultSlider = document.querySelectorAll('#carousel-result');
     var options = {
         duration: 200,
-        dist: -150,
+        // dist: -150,
         fullWidth: true,
         indicators: true
     };
-    var instances = M.Carousel.init(elems, options);
+    var resultInstances = M.Carousel.init(resultSlider, options);
     setInterval(function() {
-        M.Carousel.getInstance(elems[0]).next();
-    }, 7000);
+        M.Carousel.getInstance(resultSlider[0]).next();
+    }, 10000);
 });
 
 // Function to generate schedule table HTML
@@ -137,23 +138,23 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
-// Function to handle NAVBAR in small screen
-const hamburgerIcon = document.querySelector('.hamburger-icon');
-const navWrapperContent = document.querySelector('.nav-wrapper-content');
+// // Function to handle NAVBAR in small screen
+// const hamburgerIcon = document.querySelector('.hamburger-icon');
+// const navWrapperContent = document.querySelector('.nav-wrapper-content');
 
-// Function to handle the visibility of nav-wrapper-content
-function toggleNavContentVisibility() {
-    if (window.getComputedStyle(hamburgerIcon).display === 'none') {
-        // Hamburger icon is hidden, show nav-wrapper-content
-        navWrapperContent.style.display = 'block';
-    } else {
-        // Hamburger icon is shown, hide nav-wrapper-content
-        navWrapperContent.style.display = 'none';
-    }
-}
+// // Function to handle the visibility of nav-wrapper-content
+// function toggleNavContentVisibility() {
+//     if (window.getComputedStyle(hamburgerIcon).display === 'none') {
+//         // Hamburger icon is hidden, show nav-wrapper-content
+//         navWrapperContent.style.display = 'block';
+//     } else {
+//         // Hamburger icon is shown, hide nav-wrapper-content
+//         navWrapperContent.style.display = 'none';
+//     }
+// }
 
-// Initial call to set initial visibility
-toggleNavContentVisibility();
+// // Initial call to set initial visibility
+// toggleNavContentVisibility();
 
-// Listen for window resize event to update visibility
-window.addEventListener('resize', toggleNavContentVisibility);
+// // Listen for window resize event to update visibility
+// window.addEventListener('resize', toggleNavContentVisibility);

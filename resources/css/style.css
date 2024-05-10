@@ -5,6 +5,7 @@ body {
     width: 100%;
     height: 100%;
     scroll-behavior: smooth;
+    font-size: clamp(5px, 3vw, 20px);
 }
 
 html,
@@ -84,7 +85,7 @@ nav ul li a:hover {
 .nav-wrapper.content a {
     padding-left: 3vw;
     padding-right: 3vw;
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
 }
 
 .navbar-address {
@@ -93,7 +94,7 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     left: 33%;
-    font-size: 1.3vw;
+    /* font-size: 1.3vw; */
 }
 
 .navbar-address p {
@@ -168,19 +169,19 @@ nav ul li a:hover {
 
 .landing-elements h1 {
     text-shadow: 1px 2px 2px black;
-    font-size: 4vw;
+    /* font-size: 4vw; */
 }
 
 .landing-elements h4 {
     text-shadow: 1px 2px 2px rgb(54, 70, 62);
-    font-size: 2vw;
+    /* font-size: 2vw; */
 }
 
 .landing-elements #reservasi-button {
     justify-content: center;
     border-radius: 30px;
     margin-top: 5vh;
-    font-size: 1.5vw;
+    font-size: larger;
     width: 15vw;
 }
 
@@ -279,11 +280,11 @@ nav ul li a:hover {
 }
 
 .about-text h2 {
-    font-size: 8vh;
+    /* font-size: 8vh; */
 }
 
 .about-text p {
-    font-size: 3vh;
+    /* font-size: 3vh; */
     text-align: justify;
 }
 
@@ -321,7 +322,7 @@ nav ul li a:hover {
 }
 
 .schedule .schedule-title h2 {
-    font-size: 8vh;
+    /* font-size: 8vh; */
 }
 
 #schedule {
@@ -359,7 +360,7 @@ nav ul li a:hover {
 }
 
 .card-content .card-title {
-    font-size: small;
+    /* font-size: small; */
 }
 
 .card-content .jadwal {
@@ -367,7 +368,7 @@ nav ul li a:hover {
 }
 
 .card-content p{
-    font-size: small;
+    /* font-size: small; */
 }
 
 /* RESULT SECTION */
@@ -402,7 +403,7 @@ nav ul li a:hover {
 }
 
 .result .result-title h2 {
-    font-size: 8vh;
+    /* font-size: 8vh; */
 }
 
 .carousel-slider {
@@ -495,7 +496,7 @@ nav ul li a:hover {
 }
 
 .address h5 {
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
 }
 
 .address .address-detail {
@@ -506,7 +507,7 @@ nav ul li a:hover {
 }
 
 .address .address-detail h5 {
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
 } 
 
 .socials {
@@ -518,7 +519,7 @@ nav ul li a:hover {
 }
 
 .socials h6 {
-    font-size: 1vw;
+    /* font-size: 1vw; */
 }
 
 .socials .instagram {
@@ -569,17 +570,17 @@ nav ul li a:hover {
 
     .landing-elements h1 {
         text-shadow: 1px 2px 2px black;
-        font-size: 6vh;
+        /* font-size: 6vh; */
     }
 
     .landing-elements h4 {
-        font-size: 4vh;
+        /* font-size: 4vh; */
     }
 
     .landing-elements #reservasi-button {
         /* min-width: 150px; */
         width: 20vw;
-        font-size: 2vw;
+        /* font-size: 2vw; */
     }
 
     .about-images {
@@ -588,11 +589,11 @@ nav ul li a:hover {
     }
 
     .about-text h2 {
-        font-size: 4vh;
+        /* font-size: 4vh; */
     }
 
     .about-text p {
-        font-size: 2vh;
+        /* font-size: 2vh; */
     }
 
     .schedule .schedule-title {
@@ -600,11 +601,11 @@ nav ul li a:hover {
     }
 
     .schedule .schedule-title h2 {
-        font-size: 4vh;
+        /* font-size: 4vh; */
     }
 
     .result .result-title h2 {
-        font-size: 4vh;
+        /* font-size: 4vh; */
     }
 
     .carousel-slider {
@@ -624,15 +625,15 @@ nav ul li a:hover {
 @media (max-width: 450px) {
     .landing-elements #reservasi-button {
         width: 35vw;
-        font-size: 2vh;
+        /* font-size: 2vh; */
     }
 
     .landing-elements h1 {
-        font-size: 4vh;
+        /* font-size: 4vh; */
     }
 
     .landing-elements h4 {
-        font-size: 3vh;
+        /* font-size: 3vh; */
     }
 
     .contact-us {
@@ -663,11 +664,11 @@ nav ul li a:hover {
     }
 
     .schedule .schedule-title h2 {
-        font-size: 10vw;
+        /* font-size: 10vw; */
     }
 
     .result .result-title h2 {
-        font-size: 10vw;
+        /* font-size: 10vw; */
     }
 
     .carousel-slider {
@@ -679,15 +680,15 @@ nav ul li a:hover {
     }
 
     .address h5 {
-        font-size: 4vw;
+        /* font-size: 4vw; */
     }
 
     .address .address-detail h5 {
-        font-size: 4vw;
+        /* font-size: 4vw; */
     } 
 
     .socials h6 {
-        font-size: 3vw;
+        /* font-size: 3vw; */
     }
     
     .socials .instagram {

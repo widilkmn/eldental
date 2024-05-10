@@ -234,7 +234,6 @@ nav ul li a:hover {
 
 .about-img#about-img-1 img {
     display: flex;
-    flex-wrap: wrap;
     min-width: 270px;
     max-width: 30vw;
     border-radius: 20px;
@@ -242,7 +241,6 @@ nav ul li a:hover {
 
 .about-img#about-img-2 img {
     display: flex;
-    flex-wrap: wrap;
     min-width: 270px;
     max-width: 30vw;
     border-radius: 20px;

@@ -551,17 +551,17 @@ nav ul li a:hover {
 
     .landing-elements h1 {
         text-shadow: 1px 2px 2px black;
-        font-size: 5vh;
+        font-size: 6vh;
     }
 
     .landing-elements h4 {
-        font-size: 3svh;
+        font-size: 4vh;
     }
 
     .landing-elements #reservasi-button {
-        min-width: 150px;
-        width: 30vw;
-        font-size: 3svw;
+        /* min-width: 150px; */
+        width: 20vw;
+        font-size: 2vw;
     }
 
     .about-text h2 {

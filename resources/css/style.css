@@ -554,6 +554,10 @@ nav ul li a:hover {
         font-size: 3vh;
     }
 
+    .about-images {
+        align-items: center;
+    }
+
     .about-text h2 {
         font-size: 4vh;
     }

@@ -229,16 +229,18 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     gap: 2vh;
-    max-width: 50vw;
+    max-width: 70vw;
 }
 
 .about-img#about-img-1 img {
+    align-self: center;
     min-width: 270px;
     max-width: 30vw;
     border-radius: 20px;
 }
 
 .about-img#about-img-2 img {
+    align-self: center;
     min-width: 270px;
     max-width: 30vw;
     border-radius: 20px;

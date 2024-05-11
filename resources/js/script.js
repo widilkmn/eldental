@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var sidenav = M.Sidenav.init(elems, {
         edge: "right",
-        dragTargetWidth: "30px",
-        preventScrolling: false
+        dragTargetWidth: "30px"
     });
 
     var menuItems = document.querySelectorAll('.sidenav .menu-item');

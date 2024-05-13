@@ -292,6 +292,10 @@ nav ul li a:hover {
     width: 100%;
 }
 
+.about-text div h4 {
+    text-shadow: 1px 2px 2px rgb(201, 201, 201);
+}
+
 /* SCHEDULE SECTION */
 .schedule {
     background: url(../imgs/bg/bg-3.png);
@@ -323,6 +327,10 @@ nav ul li a:hover {
     top: 5vh;
     right: 15vw;
     z-index: 2;
+}
+
+.schedule .schedule-title h4 {
+    text-shadow: 1px 2px 2px rgb(201, 201, 201);
 }
 
 .schedule .schedule-cards {
@@ -417,6 +425,10 @@ nav ul li a:hover {
     vertical-align: top;
     top: 5vh;
     left: 15vw;
+}
+
+.result .result-title h4 {
+    text-shadow: 1px 2px 2px rgb(201, 201, 201);
 }
 
 .carousel-slider {

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.4/dist/css/materialize.min.css">
@@ -23,14 +25,20 @@
             <div class="navbar-fixed">
                 <nav class="nav-extended" id="main-navbar">
                     <div class="nav-wrapper grey lighten-3" id="navbar-top">
-                        <img src="resources/icon/logo-eldental.png" class="logo-navbar" alt="">
+                        <div class="navbar-logo"
+                        data-aos="zoom-in"
+                        data-aos-duration="400"
+                        data-aos-delay="150"
+                        >
+                            <img src="resources/icon/logo-eldental.png" alt="">
+                        </div>
                         <div class="navbar-address"
                         data-aos="zoom-in"
                         data-aos-duration="400"
                         data-aos-delay="150"
                         >
                             <p>
-                                <b class="blue-text text-darken-2">elDental Purwokerto Kids & Family Dental
+                                <b class="blue-text text-darken-2">Klinik utama <br>elDental Purwokerto Kids & Family Dental
                                     Care</b><br>
                                 <span class="black-text">Jl. Gelora Indah 2, Mangunjaya, Purwokerto Timur, Banyumas</span>
                                 <br>
@@ -59,20 +67,23 @@
                 </nav>
             </div>
     
-            <ul class="sidenav" id="slide-out">
-                <li>
-                    <div class="user-view center">
-                        <!-- <div class="background" style="height: 20vh;">
-                            <img src="resources/imgs/bg/klinik3.jpg" class="responsive-img"">
+            <ul class="sidenav" id="slide-out" style="width: 40vw;">
+                <li style="margin-bottom: 2vh;">
+                    <div class="user-view sidenav-banner">
+                        <div class="sidenav-logo">
+                            <img class="circle z-depth-1" src="resources/icon/logo-eldental-green.png">
                         </div>
-                        <div style="width: 10%; display: flex; justify-content: center;">
-                            <img class="circle z-depth-3" src="resources/icon/logo-eldental-green.png" style="width: 100%; height: 100%;">
+                        <!-- <div class="divider transparent"></div>
+                        <div class="">
+                            <span>test</span>
                         </div>
                         <div class="divider transparent"></div>
+                        <div class="">
+                            <span>123456</span>
+                        </div>
                         <div class="divider transparent"></div> -->
                     </div>
                 </li>
-                <br>
                 <li><a class="menu-item waves-effect" href="#landing-section">HOME</a></li>
                 <li><a class="menu-item waves-effect" href="#about-section">ABOUT</a></li>
                 <li><a class="menu-item waves-effect" href="#schedule-section">JADWAL PRAKTEK</a></li>
@@ -113,8 +124,8 @@
                 data-aos-delay="500"
                 >
                     <a href="https://bit.ly/2rq3pje" target="_blank"
-                        class="btn filled rounded waves-effect waves-light deep-orange darken-3" id="reservasi-button">
-                        RESERVASI
+                        class="btn filled rounded waves-effect waves-light deep-orange darken-3 pulse" id="reservasi-button">
+                        <b>RESERVASI</b>
                     </a>
                 </div>
             </div>
@@ -147,7 +158,7 @@
                     data-aos-duration="700"
                     data-aos-delay="300"
                     >
-                        <img src="resources/icon/logo-eldental.png" class="responsive-img logo-navbar" alt="">
+                        <img src="resources/icon/logo-eldental.png" class="responsive-img about-logo" alt="">
                     </div>
                     <div
                     data-aos="fade-up"
@@ -182,12 +193,12 @@
             >
                 <h4 class="teal-text text-accent-4"><b>Jadwal Praktek</b></h4>
             </div>
-            <div class="carousel" id="schedule"
+            <div class="schedule-cards"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="700"
             >
-    
+                <div class="carousel" id="schedule"></div>
             </div>
         </section>
     
@@ -248,7 +259,7 @@
                     data-aos-duration="800"
                     data-aos-delay="350"
                     >
-                        <img src="resources/imgs/bg/images.jpg">
+                        <img src="resources/imgs/bg/images-copy.jpg">
                     </div>
                     <div class="map-location"
                     data-aos="fade-up"
@@ -265,7 +276,7 @@
                     data-aos-duration="800"
                     data-aos-delay="650"
                     >
-                        <img src="resources/imgs/bg/images.jpg">
+                        <img src="resources/imgs/bg/images-copy.jpg">
                     </div>
                 </div>
                 <div style="padding: 0; margin: 0;"
@@ -277,16 +288,21 @@
                         <div class="address-detail teal accent-4 white-text">
                             <h6>Jl. Gelora Indah 2, Mangunjaya, Purwokerto Timur, Banyumas</h6>
                         </div>
-                        <h6 class="blue-text text-darken-2"><strong>elDental Purwokerto Kids & Family Dental Care</strong></h6>
+                        <h6 class="address-clinic blue-text text-darken-2"><strong>Klinik Utama <br> elDental Purwokerto Kids & Family Dental Care</strong></h6>
                     </div>
                     <div class="socials">
-                        <div class="instagram teal accent-4 white-text">
-                            <i class="fa-brands fa-square-instagram"></i>
-                            <h6>Instagram</h6>
-                        </div>
-                        <div class="facebook teal accent-4 white-text">
-                            <h6>Facebook</h6>
-                        </div>
+                        <a href="https://www.instagram.com/eldentalpurwokerto/" target="_blank">
+                            <i class="fa-brands fa-square-instagram fa-xl"></i>
+                            <div class="instagram-text teal accent-4 white-text">
+                                <h6 class="white-text">Instagram</h6>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/eldentalpurwokerto/" target="_blank">
+                            <i class="fa-brands fa-square-facebook fa-xl"></i>
+                            <div class="facebook-text teal accent-4 white-text">
+                                <h6 class="white-text">Facebook</h6>
+                            </div>
+                        </a>
                     </div>
                 
                 </div>

@@ -1,7 +1,7 @@
-window.onload = function() {
-    // Adjust the value (100 in this case) to scroll more or less
-    window.scrollBy(0, -100); // Negative value scrolls up
-}
+// window.onload = function() {
+//     // Adjust the value (100 in this case) to scroll more or less
+//     window.scrollBy(0, -100); // Negative value scrolls up
+// }
 
 // General Function
 document.addEventListener('DOMContentLoaded', function() {
@@ -56,13 +56,20 @@ document.addEventListener('DOMContentLoaded', function() {
             carousel.innerHTML = carouselHTML; // Append all cards at once
 
             // Initialize Materialize Carousel
-            var elems = document.querySelectorAll('.schedule');
-            var options = { 
-                dist: -200,
-                duration: 100, // Adjust transition duration
-                // indicators: true // Show indicators
-            };
-            var instances = M.Carousel.init(elems, options);
+            var elems = document.querySelectorAll('#schedule');
+            var instances;
+
+            // Check if screen size is less than 450px
+            if (window.innerWidth < 450) {
+                instances = M.Carousel.init(elems, { 
+                    dist: -200,
+                    duration: 100 
+                });
+            } else {
+                instances = M.Carousel.init(elems, { 
+                    duration: 100 
+                });
+            }
         })
         .catch(error => {
             console.error('Error loading the data:', error);
@@ -70,13 +77,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Carousel Result Image Function
     var resultSlider = document.querySelectorAll('#carousel-result');
-    var options = {
+    var resultInstances = M.Carousel.init(resultSlider, {
         duration: 200,
         // dist: -150,
         fullWidth: true,
         indicators: true
-    };
-    var resultInstances = M.Carousel.init(resultSlider, options);
+    });
     setInterval(function() {
         M.Carousel.getInstance(resultSlider[0]).next();
     }, 10000);
@@ -120,6 +126,8 @@ window.addEventListener('scroll', function() {
     }
 
 
+    // Check if screen size is greater than 450px
+if (window.innerWidth > 992) {
     // Get the current scroll position
     const scrollTop = document.documentElement.scrollTop;
 
@@ -135,6 +143,7 @@ window.addEventListener('scroll', function() {
 
     // Update the last scroll position
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}
 });
 
 // // Function to handle NAVBAR in small screen

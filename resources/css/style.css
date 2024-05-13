@@ -8,6 +8,10 @@ body {
     font-size: clamp(1rem, 1vw, 12rem);
 }
 
+section {
+    overflow: hidden;
+}
+
 html,
 button, input, optgroup, select, textarea {
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
@@ -15,7 +19,7 @@ button, input, optgroup, select, textarea {
 
 .body {
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 /* BANNER SECTION */
@@ -30,6 +34,22 @@ button, input, optgroup, select, textarea {
     justify-content: center;
     align-items: center;
     z-index: 1001;
+}
+
+.sidenav-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidenav-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.sidenav-banner .background {
+    width: 100%;
+    height: 10vh;
 }
 
 .show-nav {
@@ -69,10 +89,13 @@ nav ul li a:hover {
     background: linear-gradient(to bottom, rgb(227, 215, 215) -90%, whitesmoke);
 }
 
-.nav-wrapper img {
+.nav-wrapper .navbar-logo {
     max-width: 15vw;
-    max-height: 100%;
-    object-fit: cover;
+    display: flex;
+}
+
+.nav-wrapper .navbar-logo img {
+    max-width: 100%;
     margin-top: 3vh;
     margin-bottom: 3vh;
 }
@@ -132,7 +155,7 @@ nav ul li a:hover {
 .contact-us img {
     width: 100%; /* Set width to 100% to fill the parent div */
     height: 100%; /* Set height to 100% to fill the parent div */
-    cursor: pointer; 
+    cursor: pointer;
     transition: filter 0.3s ease-out;
 }
 
@@ -145,6 +168,7 @@ nav ul li a:hover {
 .landing {
     background: url(../imgs/bg/bg.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     width: 100%;
@@ -175,12 +199,12 @@ nav ul li a:hover {
     /* font-size: 2vw; */
 }
 
-.landing-elements #reservasi-button {
+.landing-elements .reservasi-button a {
     justify-content: center;
     border-radius: 30px;
     margin-top: 5vh;
     font-size: larger;
-    width: 15vw;
+    width: 13vw;
 }
 
 .landing-overlay {
@@ -193,8 +217,10 @@ nav ul li a:hover {
 
 /* ABOUT SECTION */
 .about {
-    background: gainsboro;
-    background-position: center;
+    background: url(../imgs/bg/bg-2.png);
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -203,13 +229,13 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.about-overlay {
+/* .about-overlay {
     background: linear-gradient(to right, rgb(95, 254, 183), rgb(255, 0, 0, 0));
     width: 100%;
     height: 100%;
     opacity: 0.3;
     position: absolute;
-}
+} */
 
 .about-elements {
     display: flex;
@@ -267,11 +293,11 @@ nav ul li a:hover {
 
 /* SCHEDULE SECTION */
 .schedule {
-    background: gainsboro;
-    /* background: url(../imgs/bg/4.png); */
+    background: url(../imgs/bg/bg-3.png);
     /* background: linear-gradient(to right, rgb(7, 194, 135), rgb(255, 0, 0, 0)); */
     background-size: cover;
-    background-position: center;
+    background-position: top left;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -281,13 +307,13 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.schedule-overlay {
+/* .schedule-overlay {
     background: linear-gradient(to right, rgb(95, 254, 183), rgb(255, 0, 0, 0));
     height: 100vh;
     width: 100%;
     opacity: 0.3;
     position: absolute;
-}
+} */
 
 .schedule .schedule-title {
     position:absolute;
@@ -298,32 +324,52 @@ nav ul li a:hover {
     z-index: 2;
 }
 
-#schedule {
-    height: 100vh;
+.schedule .schedule-cards {
+    width: 100vw;
+    height: 70vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform-style: preserve-3d;
+    transform-origin: 0% 50%;
+    perspective: 500px; */
+}
+
+.schedule-cards #schedule {
+    height: 100%;
     width: 100%;
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* perspective: 500px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
     z-index: 1;
 }
 
 #schedule .carousel-item {
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 5vh;
-    min-width: 24vw;
-    max-width: 60vw;
+    /* border-radius: 20px;
+    min-width: 15vw;
+    max-width: 60vw; */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .card {
-    min-width: 10vw;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* min-width: 10vw; */
 }
 
 .card-image img {
     background-color: white;
     width: 100%;
     height: 100%;
-    max-height: 45vh;
-    object-fit: contain;
+    /* max-height: 45vh; */
+    /* object-fit: contain; */
 }
 
 .card-content {
@@ -332,17 +378,22 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.card-content button p {
+    font-size: smaller;
+}
+
 .card-content .jadwal {
     border-radius: 25px;
 }
 
 /* RESULT SECTION */
 .result {
-    background: gainsboro;
-    /* background: url(../imgs/bg/6.png); */
+    /* background: gainsboro; */
+    background: url(../imgs/bg/bg-4.png);
     /* background: linear-gradient(to right, rgb(7, 194, 135), rgb(255, 0, 0, 0)); */
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top left;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -351,13 +402,13 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.result-overlay {
+/* .result-overlay {
     background: linear-gradient(to right, rgb(95, 254, 183), rgb(255, 0, 0, 0));
     height: 100vh;
     width: 100%;
     opacity: 0.3;
     position: absolute;
-}
+} */
 
 .result .result-title {
     position:absolute;
@@ -393,7 +444,10 @@ nav ul li a:hover {
 
 /* LOCATION SECTION */
 .location {
-    background-color: gainsboro;
+    background: url(../imgs/bg/bg-5.png);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -402,13 +456,13 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.location-overlay {
+/* .location-overlay {
     background: linear-gradient(to right, rgb(95, 254, 183), rgb(255, 0, 0, 0));
     height: 100vh;
     width: 100%;
     opacity: 0.3;
     position: absolute;
-}
+} */
 
 .location-elements {
     z-index: 1;
@@ -434,7 +488,7 @@ nav ul li a:hover {
 .location-logo {
     display: flex;
     justify-content: center;
-    max-width: 20vw;
+    max-width: 15vw;
 }
 
 .location-logo img {
@@ -442,10 +496,12 @@ nav ul li a:hover {
 }
 
 .location-image img {
+    border-radius: 20px;
     min-width: 14vw;
 }
 
 .map-images .map-location iframe{
+    border-radius: 20px;
     max-width: 35vw;
     max-height: 50vh;
 }
@@ -458,13 +514,15 @@ nav ul li a:hover {
 }
 
 .address .address-detail {
-    padding: 0 1vw 1vh 1vw;
+    margin-bottom: 1vh;
+    padding: 0 2vw 1vh 2vw;
     border-radius: 30px;
     max-width: 70vw;
     align-self: center;
 }
 
 .socials {
+    margin-top: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -472,12 +530,19 @@ nav ul li a:hover {
     gap: 10vw;
 }
 
-.socials .instagram {
+.socials a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.socials .instagram-text {
     border-radius: 30px;
     padding: 0 1vw 1vh 1vw;
 }
 
-.socials .facebook {
+.socials .facebook-text {
     border-radius: 30px;
     padding: 0 1vw 1vh 1vw;
 }
@@ -523,6 +588,7 @@ nav ul li a:hover {
     }
 
     .landing-elements #reservasi-button {
+        min-width: 150px;
         width: 20vw;
     }
 
@@ -550,6 +616,26 @@ nav ul li a:hover {
 }
 
 @media (max-width: 450px) {
+    .nav-wrapper .navbar-logo {
+        max-width: 25vw;  
+    }
+
+    .nav-wrapper .navbar-logo img {
+        max-width: 100%;
+        /* max-height: 4vh; */
+        object-fit: cover;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .nav-wrapper .about-logo {
+        max-width: 100%;
+        max-height: 4vh;
+        object-fit: cover;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
     .landing-elements #reservasi-button {
         width: 35vw;
     }
@@ -589,6 +675,12 @@ nav ul li a:hover {
         gap: 5vh;
     }
 
+    .location-logo {
+        display: flex;
+        justify-content: center;
+        max-width: 35vw;
+    }
+
     .address {
         width: 80vw;
     }
@@ -597,13 +689,25 @@ nav ul li a:hover {
         width: 80vw;
     }
     
-    .socials .instagram {
+    .address-detail h6 {
+        font-size: smaller;
+    }
+
+    .socials .instagram-text {
         border-radius: 30px;
         padding: 0 3vw 1vw 3vw;
     }
+
+    .socials .instagram-text h6 {
+        font-size: smaller;
+    }
     
-    .socials .facebook {
+    .socials .facebook-text {
         border-radius: 30px;
         padding: 0 3vw 1vw 3vw;
+    }
+
+    .socials .facebook-text h6 {
+        font-size: smaller;
     }
 }

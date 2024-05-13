@@ -361,6 +361,7 @@ nav ul li a:hover {
     /* border-radius: 20px;
     min-width: 15vw;
     max-width: 60vw; */
+    width: 25vh;
     position: absolute;
     top: 0;
     left: 0;

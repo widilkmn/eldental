@@ -33,6 +33,7 @@ button, input, optgroup, select, textarea {
 .sidenav {
     justify-content: center;
     align-items: center;
+    width: 45vw;
     z-index: 1001;
 }
 

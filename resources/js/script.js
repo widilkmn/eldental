@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="card-reveal">
                                 <span class="card-title"><i class="material-icons right">close</i>Jadwal</span>
                                 <br>
-                                <div class="divider"></div>
                                 ${generateScheduleTable(dokter.jadwal)}
                             </div>
                         </div>

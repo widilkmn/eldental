@@ -753,16 +753,8 @@ nav ul li a:hover {
     #schedule .carousel-item {
         max-width: 15vw;
     }
-
-    .carousel-item .card-title {
-        font-size: small;
-    }
-
-    .carousel-item i {
-        font-size: small;
-    }
     
-    .carousel-item .card-reveal {
+    .carousel-item .card-reveal * {
         font-size: small;
     }
 }

@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     setInterval(function() {
-        M.Carousel.getInstance(resultSlider[0]).next();
+        resultInstances.next();
     }, 10000);
 });
 

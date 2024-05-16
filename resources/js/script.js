@@ -74,14 +74,66 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error loading the data:', error);
         });
 
-    // Carousel Result Image Function
-    var resultSlider = document.querySelectorAll('#carousel-result');
-    var resultInstances = M.Carousel.init(resultSlider, {
+    // Carousel Image-1 Function
+    var aboutImg1Slider = document.querySelector('#carousel-about-img-1');
+    var aboutImg1 = M.Carousel.init(aboutImg1Slider, {
         duration: 200,
         // dist: -150,
         fullWidth: true,
         indicators: true
     });
+
+    // Get img-1 instance
+    var aboutImg1Instances = M.Carousel.getInstance(aboutImg1Slider);
+
+    document.getElementById('about-img-1-left').addEventListener('click', function() {
+        aboutImg1Instances.prev();
+    });
+
+    document.getElementById('about-img-1-right').addEventListener('click', function() {
+        aboutImg1Instances.next();
+    });
+
+    // Carousel Image-2 Function
+    var aboutImg2Slider = document.querySelector('#carousel-about-img-2');
+    var aboutImg2 = M.Carousel.init(aboutImg2Slider, {
+        duration: 200,
+        // dist: -150,
+        fullWidth: true,
+        indicators: true
+    });
+
+    // Get img-2 instance
+    var aboutImg2Instances = M.Carousel.getInstance(aboutImg2Slider);
+
+    document.getElementById('about-img-2-left').addEventListener('click', function() {
+        aboutImg2Instances.prev();
+    });
+
+    document.getElementById('about-img-2-right').addEventListener('click', function() {
+        aboutImg2Instances.next();
+    });
+
+    // Carousel Result Image Function
+    var resultSlider = document.querySelector('#carousel-result');
+    var resultCarousel = M.Carousel.init(resultSlider, {
+        duration: 200,
+        // dist: -150,
+        fullWidth: true,
+        indicators: true
+    });
+
+    // Get result-carousel instance
+    var resultInstances = M.Carousel.getInstance(resultSlider);
+
+    document.getElementById('result-button-left').addEventListener('click', function() {
+        resultInstances.prev();
+    });
+
+    document.getElementById('result-button-right').addEventListener('click', function() {
+        resultInstances.next();
+    });
+
     setInterval(function() {
         M.Carousel.getInstance(resultSlider[0]).next();
     }, 10000);

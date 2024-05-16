@@ -730,6 +730,7 @@ nav ul li a:hover {
     }
 
     .about-elements {
+        margin-top: 5vh;
         flex-direction: column;
     }
 

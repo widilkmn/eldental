@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             data.dokter.forEach(function(dokter, index) {
                 carouselHTML += `
-                    <a class="carousel-item" href="#${index + 1}!">
+                    <a class="carousel-item" href="#${index + 1}">
                         <div class="card">
                             <div class="card-image">
                                 <img src="${dokter.foto}" class="responsive-img">

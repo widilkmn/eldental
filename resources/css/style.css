@@ -230,14 +230,6 @@ nav ul li a:hover {
     align-items: center;
 }
 
-/* .about-overlay {
-    background: linear-gradient(to right, rgb(95, 254, 183), rgb(255, 0, 0, 0));
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
-    position: absolute;
-} */
-
 .about-elements {
     display: flex;
     justify-content: center;
@@ -298,24 +290,13 @@ nav ul li a:hover {
     border-radius: 20px;
 }
 
-#carousel-about-img-1 {
-    /* flex: 1; */
-    /* height: 30vh; */
-}
-
 #carousel-about-img-1 .carousel-item img {
     width: 100%;
-    /* height: 100%; */
     object-fit: contain;
-}
-
-#carousel-about-img-2 {
-    /* flex: 1; */
 }
 
 #carousel-about-img-2 .carousel-item img {
     width: 100%;
-    /* height: 100%; */
     object-fit: contain;
 }
 
@@ -351,7 +332,6 @@ nav ul li a:hover {
 /* SCHEDULE SECTION */
 .schedule {
     background: url(../imgs/bg/bg-3.png);
-    /* background: linear-gradient(to right, rgb(7, 194, 135), rgb(255, 0, 0, 0)); */
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
@@ -363,14 +343,6 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
 }
-
-/* .schedule-overlay {
-    background: linear-gradient(to right, rgb(95, 254, 183), rgb(255, 0, 0, 0));
-    height: 100vh;
-    width: 100%;
-    opacity: 0.3;
-    position: absolute;
-} */
 
 .schedule .schedule-title {
     position:absolute;
@@ -392,58 +364,18 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transform-style: preserve-3d;
-    transform-origin: 0% 50%;
-    perspective: 500px; */
 }
 
 .schedule-cards #schedule {
     height: 100%;
     width: 100%;
-    /* position: relative; */
-    /* overflow: hidden; */
-    /* perspective: 500px; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     z-index: 1;
-}
-
-#schedule .carousel-item {
-    /* border-radius: 20px;
-    min-width: 15vw;
-    max-width: 60vw; */
-    /* width: 20vw; */
-}
-
-.card {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* min-width: 10vw; */
-    /* max-width: 50%; */
-    /* max-height: 70vh; */
-}
-
-.card-image img {
-    /* background-color: white;
-    width: 100%;
-    height: 100%;
-    max-height: 50vh;
-    object-fit: contain; */
 }
 
 .card-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* max-width: 80%; */
-}
-
-.card-content button {
-    /* margin: 0;
-    max-height: 40%;
-    max-width: 100%; */
 }
 
 .card-content button p {
@@ -456,9 +388,7 @@ nav ul li a:hover {
 
 /* RESULT SECTION */
 .result {
-    /* background: gainsboro; */
     background: url(../imgs/bg/bg-4.png);
-    /* background: linear-gradient(to right, rgb(7, 194, 135), rgb(255, 0, 0, 0)); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
@@ -469,14 +399,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
-
-/* .result-overlay {
-    background: linear-gradient(to right, rgb(95, 254, 183), rgb(255, 0, 0, 0));
-    height: 100vh;
-    width: 100%;
-    opacity: 0.3;
-    position: absolute;
-} */
 
 .result .result-title {
     position:absolute;
@@ -528,20 +450,12 @@ nav ul li a:hover {
     background-position: top left;
     background-repeat: no-repeat;
     min-height: 100vh;
-    min-width: 100%;
+    width: 100%;
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
 }
-
-/* .location-overlay {
-    background: linear-gradient(to right, rgb(95, 254, 183), rgb(255, 0, 0, 0));
-    height: 100vh;
-    width: 100%;
-    opacity: 0.3;
-    position: absolute;
-} */
 
 .location-elements {
     z-index: 1;
@@ -550,8 +464,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     gap: 2vh;
-    padding: 0;
-    margin: 0;
+    padding: 5vh;
 }
 
 .map-images {
@@ -568,6 +481,16 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     max-width: 15vw;
+}
+
+.insurance-logo {
+    display: flex;
+    justify-content: center;
+    max-width: 30vw;
+}
+
+.insurance-logo img {
+    width: 100%;
 }
 
 .location-logo img {
@@ -772,6 +695,12 @@ nav ul li a:hover {
         display: flex;
         justify-content: center;
         max-width: 35vw;
+    }
+
+    .insurance-logo {
+        display: flex;
+        justify-content: center;
+        max-width: 70vw;
     }
 
     .address {

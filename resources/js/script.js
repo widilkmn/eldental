@@ -1,8 +1,3 @@
-// window.onload = function() {
-//     // Adjust the value (100 in this case) to scroll more or less
-//     window.scrollBy(0, -100); // Negative value scrolls up
-// }
-
 // General Function
 document.addEventListener('DOMContentLoaded', function() {
     // Side Navigation Function
@@ -134,6 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
         resultInstances.next();
     });
 
+    // Auto scroll result-carousel
     setInterval(function() {
         resultInstances.next();
     }, 10000);
@@ -196,24 +192,3 @@ if (window.innerWidth > 992) {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }
 });
-
-// // Function to handle NAVBAR in small screen
-// const hamburgerIcon = document.querySelector('.hamburger-icon');
-// const navWrapperContent = document.querySelector('.nav-wrapper-content');
-
-// // Function to handle the visibility of nav-wrapper-content
-// function toggleNavContentVisibility() {
-//     if (window.getComputedStyle(hamburgerIcon).display === 'none') {
-//         // Hamburger icon is hidden, show nav-wrapper-content
-//         navWrapperContent.style.display = 'block';
-//     } else {
-//         // Hamburger icon is shown, hide nav-wrapper-content
-//         navWrapperContent.style.display = 'none';
-//     }
-// }
-
-// // Initial call to set initial visibility
-// toggleNavContentVisibility();
-
-// // Listen for window resize event to update visibility
-// window.addEventListener('resize', toggleNavContentVisibility);

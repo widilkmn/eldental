@@ -476,6 +476,14 @@ nav ul li a:hover {
     margin: 0;
 }
 
+.location-title {
+    margin-bottom: 1vh;
+    padding: 0 2vw 1vh 2vw;
+    border-radius: 30px;
+    max-width: 70vw;
+    align-self: center;
+}
+
 .location-logo {
     display: flex;
     justify-content: center;
@@ -708,6 +716,10 @@ nav ul li a:hover {
 
     .socials {
         width: 80vw;
+    }
+
+    .location-title h6 {
+        font-size: smaller;
     }
     
     .address-detail h6 {

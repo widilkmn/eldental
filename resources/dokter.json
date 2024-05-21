@@ -87,7 +87,7 @@
         {
             "nama": "drg. Aulia Laras",
             "title": "Dokter Gigi Umum",
-            "foto":"resources/imgs/photos/aulia.png",
+            "foto":"resources/imgs/photos/leedwin.png",
             "jadwal": {
                 "Senin": "",
                 "Selasa": "09.30-13.30",
@@ -101,7 +101,7 @@
         {
             "nama": "drg. Denik Mutaqin",
             "title": "Dokter Gigi Umum",
-            "foto":"resources/imgs/photos/denik.png",
+            "foto":"resources/imgs/photos/leedwin.png",
             "jadwal": {
                 "Senin": "17.30-20.30",
                 "Selasa": "17.30-20.30",

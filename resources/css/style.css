@@ -260,6 +260,7 @@ nav ul li a:hover {
     cursor: pointer;
     color: rgb(172, 172, 172);
     transition: transform 0.1s ease-in-out;
+    padding: 0 1vw 1vh 1vw;
 }
 
 .click-button:active {
@@ -415,7 +416,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    gap: 3vw;
 }
 
 .carousel-slider {
@@ -691,7 +692,7 @@ nav ul li a:hover {
     }
 
     .carousel-slider {
-        width: 80vw;
+        width: 70vw;
     }
 
     .location-elements {

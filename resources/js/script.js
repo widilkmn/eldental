@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="card">
                             <div class="card-image">
                                 <img src="${dokter.foto}" class="responsive-img">
-                                <div class="activator waves-effect waves-light" style="position:absolute;top:0;bottom:0;right:0;left:0;"></div>
                             </div>
                             <div class="card-content">
                                 <button class="card-title activator btn waves-effect waves-light teal accent-4 jadwal"><p>Info Jadwal</p></button>
